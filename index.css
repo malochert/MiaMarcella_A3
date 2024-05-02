@@ -12,18 +12,11 @@
     background-color: rgb(197, 222, 197);
 }
 
-section{
-    display: block;
+.s2{
+    display:inline-block;
 }
 
 .column2{
-    float: left;
-    display: grid;
-    padding: 1em;
-    width: 15%;
-}
-
-.column3{
     float: left;
     display: grid;
     padding: 1em;
