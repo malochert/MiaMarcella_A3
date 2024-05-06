@@ -28,16 +28,16 @@ p {
 }
 
 .container{
-    display: flexbox;
+    display: flex;
     text-align: center;
+    width: 100%;
 }
 
 .column{
-    display: flexbox;
+    display: flex;
     float: left;
     display: grid;
     padding: 1.04em;
-    width: 15%;
     background-color: rgb(205, 205, 205);
 }
 
