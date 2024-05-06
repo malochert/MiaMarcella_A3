@@ -12,41 +12,66 @@
 <body>
     <main>
         <h1>Shopping Cart</h1>
-        <div class="classlist">
-            <table>
-                <tr>
-                    <th scope="col">Class</th>
-                    <th scope="col">People</th>
-                    <th scope="col">Price</th>
-                </tr>
-                <tr>
-                    <td class="class1">
-                        <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
+        <div class="productlist">
+            <div class="row">
+                <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
+                <ul class="classdetails">
+                    <li>
                         <h2>Beginners Wheel Pottery Classes</h2>
+                    </li>
+                    <li>
                         <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun 12:00PM (AEST)</p>
-                    </td>
-                    <td>
-                        <button>People</button>
-                    </td>
-                    <td>
-                        <h2 class="price">$625</h2>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="class2">
-                        <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnail">
+                    </li>
+                </ul>
+                <button>People</button>
+                <h2 class="price">$625</h2>
+            </div>
+            <div class="row">
+                <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnail">
+                <ul class="classdetails">
+                    <li>
                         <h2>Beginners Wheel Pottery Classes</h2>
+                    </li>
+                    <li>
                         <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun 12:00PM (AEST)</p>
-                    </td>
-                    <td>
-                        <button>People</button>
-                    </td>
-                    <td>
-                        <h2 class="price">$625</h2>
-                    </td>
-                </tr>
-            </table>
+                    </li>
+                </ul>
+                <button>People</button>
+                <h2 class="price">$625</h2>
+            </div>
         </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+            <path d="M0 1H1090" class="separator" />
+        </svg>
+        <div class="totals row">
+            <div>
+                <h2>Subtotal:</h2>
+                <h2>Tax:</h2>
+            </div>
+            <div>
+                <h2>$1250</h2>
+                <h2>$0</h2>
+            </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+            <path d="M0 1H1090" class="separator" />
+        </svg>
+
+        <div class="buttons row">
+            <div class="buttonwtext">
+                <svg width="516" height="79" viewBox="0 0 516 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="516" height="79" rx="30" fill="#C9CDB0" />
+                </svg>
+                <p>Continue Shopping</p>
+            </div>
+            <div class="buttonwtext">
+                <svg width="516" height="79" viewBox="0 0 516 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="516" height="79" rx="30" fill="black" />
+                </svg>
+                <p>Payment Method</p>
+            </div>
+        </div>
+
     </main>
 </body>
 

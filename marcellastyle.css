@@ -3,18 +3,45 @@ h1 {
     text-align: center;
 }
 
-table {
-    align-self: center;
-}
-
-th,td {
-    padding:5em;
-}
-
-td {
-    text-align: center;
+ul {
+    list-style-type: none;
 }
 
 img.cartthumbnail {
-    width:30%;
+    width: 239px;
+    height: 152px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 2em;
+}
+
+.productlist, .totals {
+    padding-left:15em;
+    padding-right:15em;
+}
+
+.buttons {
+    padding-left: 10em;
+    padding-right: 10em;
+}
+
+.buttonwtext {
+    text-align: center;
+}
+
+.separator {
+    width: 1090px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #000;
 }
