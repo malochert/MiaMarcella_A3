@@ -7,9 +7,9 @@
     display: flexbox;
     float: left;
     display: grid;
-    padding: 1em;
+    padding: 1.04em;
     width: 15%;
-    background-color: rgb(197, 222, 197);
+    background-color: rgb(205, 205, 205);
 }
 
 .s2{
@@ -23,6 +23,15 @@
     width: 15%;
 }
 
+.column3{
+    float: left;
+    display: grid;
+    margin-left: 300px;
+    margin-top: 100px;
+    padding: 1em;
+    width: 30%;
+}
+
 img{
     position:relative;
     width: 100%;
@@ -34,4 +43,21 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
+}
+
+.center{
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.imgscale{
+    margin: 200px;
+    width: 500px;
+    height: auto;
+}
+
+footer{
+    padding: 1em;
+    background-color: rgb(222, 185, 157);
 }
