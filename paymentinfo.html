@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marcellastyle.css">
+    <title>Payment Info</title>
+</head>
+
+
+<body>
+    <header>
+        <h3>Slow Clay Center</h3>
+        <nav class="container">
+            <div class="column">
+                Home
+            </div>
+            <div class="column">
+                About
+            </div>
+            <div class="column">
+                Classes
+            </div>
+            <div class="column">
+                Events
+            </div>
+            <div class="column">
+                Products
+            </div>
+            <div class="column">
+                Contacts
+            </div>
+        </nav>
+    </header>
+
+    <main class="twocolumns">
+        <div class="bookingdetails">
+            <div class="productlist">
+                <div class="row">
+                    <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
+                    <ul class="classdetails">
+                        <li>
+                            <h2>Beginners Wheel Pottery Classes</h2>
+                        </li>
+                        <li>
+                            <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun 12:00PM (AEST)</p>
+                        </li>
+                    </ul>
+                    <button>People</button>
+                    <h2 class="price">$625</h2>
+                </div>
+                <div class="row">
+                    <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnail">
+                    <ul class="classdetails">
+                        <li>
+                            <h2>Beginners Wheel Pottery Classes</h2>
+                        </li>
+                        <li>
+                            <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun 12:00PM (AEST)</p>
+                        </li>
+                    </ul>
+                    <button>People</button>
+                    <h2 class="price">$625</h2>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+                <path d="M0 1H1090" class="separator" />
+            </svg>
+            <div class="totals row">
+                <div>
+                    <h2>Subtotal:</h2>
+                    <h2>Tax:</h2>
+                </div>
+                <div>
+                    <h2>$1250</h2>
+                    <h2>$0</h2>
+                </div>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+                <path d="M0 1H1090" class="separator" />
+            </svg>
+        </div>
+        <div class="userinfo">
+            <h2>Payment Information:</h2>
+            <form>
+                <label for="payment_email">Email Address</label>
+                <input type="text" class="textInput" id="payment_email" name="email" />
+                <label for="payment_name">Name on Card</label>
+                <input type="text" class="textInput" id="payment_name" name="name" />
+                <label for="payment_cardno">Card Number</label>
+                <input type="text" class="textInput" id="payment_cardno" name="cardno" />
+                <label for="payment_cvv">CVV/CVC</label>
+                <input type="text" class="textInput" id="payment_cvv" name="cvv" />
+                <label for="payment_expiry">Expiry</label>
+                <input type="text" class="textInput" id="payment_expiry" name="expiry" />
+            </form>
+            <a href="#" class="button4">
+                <p>Confirm Payment</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <h1>Contact</h1>
+        <h2>Phone: 399 437 844</h2>
+        <h2>Email: info@slowclay.com</h2>
+    </footer>
+</body>
+
+</html>
