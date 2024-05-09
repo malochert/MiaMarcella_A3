@@ -114,6 +114,10 @@ img.cartthumbnail {
     stroke: #000;
 }
 
+.linebox {
+    margin-left: 5em;
+}
+
 footer{
     padding: 1em;
     background-color: rgb(222, 185, 157);
