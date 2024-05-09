@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
+
+h1 {
+    font-size: 5em;
+    color: #333030;
+    text-align: center;
+    font-family: "Crimson Text", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2 {
+    color: #555;
+    font-family:"Crimson Text", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: #555;
+    font-family: "Lexend", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.column{
+    display: flex;
+    float: left;
+    display: grid;
+    padding: 1.04em;
+    background-color: rgb(205, 205, 205);
+}
+
+ul {
+    list-style-type: none;
+}
+
+img.cartthumbnail {
+    width: 239px;
+    height: 152px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 2em;
+}
+
+.productlist, .totals {
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 2em;
+    padding-left: 15em;
+    padding-right: 15em;
+}
+
+.button1, .button2, .button4 {
+    text-align: center;
+    font-size: 32px;
+    border-radius: 30px;
+    width: 455px;
+    height: 70px;
+    flex-shrink: 0;
+}
+
+.button1 {
+    color: #000;
+    background: #C9CDB0;
+}
+
+.button2 {
+    color: #fff;
+    background: #000;
+}
+
+.twocolumns {
+    display: flex;
+    flex-direction: row;
+}
+
+.confirmationpage {
+    background-color: seagreen;
+}
+
+.separator {
+    width: 1090px;
+    height: 0px;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    stroke: #000;
+}
+
+.linebox {
+    margin-left: 5em;
+}
+
+footer{
+    padding: 1em;
+    background-color: rgb(222, 185, 157);
+}
