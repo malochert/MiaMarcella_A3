@@ -1,17 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
 
+body{
+    margin: 0;
+}
+
 .container{
     display: flexbox;
     text-align: center;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
 }
+
 
 .column{
     display: flexbox;
     float: left;
     display: grid;
-    padding: 1.04em;
-    width: 15%;
+    padding: 1em;
+    width: 100%;
     background-color: rgb(205, 205, 205);
 }
 
@@ -39,6 +48,7 @@ img{
     position:relative;
     width: 100%;
     transform: translateX(-0.5em);
+    margin-top: 100px;
 }
 
 .imgtext {
@@ -78,7 +88,7 @@ ol, ul {
 
   nav li{
     padding: 1em 2em;
-    width: 105%;
+    width: 100%;
     background-color: #818181;
     color: rgb(0, 0, 0);
     transform: translateX(-0.5em);
@@ -87,7 +97,7 @@ ol, ul {
 nav ul ul{
     transform: scale(1,0);
     transform-origin: top right;
-    position: absolute;
+    position: fixed;
     top: 100%;
     transition: 0.3s;
     justify-content: center;
@@ -98,4 +108,26 @@ nav li:hover ul{
   transform: scale(1,1);
     transition: 0.3s;
 }
-       
+
+button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align:center;
+    font-size: 30px;
+    border-radius: 30px;
+    width: 455px;
+    height: 70px;
+    flex-shrink: 0;
+    margin-bottom: 3%;
+}
+
+.button1 {
+    color: #000;
+    background: #C9CDB0;
+}
+
+.button2 {
+    color: #fff;
+    background: #000;
+}
