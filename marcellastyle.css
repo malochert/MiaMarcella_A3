@@ -6,8 +6,8 @@
 
 
 h1 {
-    font-size: 5em;
-    color: #33303;
+    font-size: 5rem;
+    color: #333030;
     text-align: center;
     font-family: "Crimson Text", Times, serif;
     font-style: normal;
@@ -16,6 +16,7 @@ h1 {
 }
 
 h2 {
+    font-size: 2rem;
     color: #555;
     font-family:"Crimson Text", Times, serif;
     font-style: normal;
@@ -24,6 +25,7 @@ h2 {
 }
 
 p {
+    font-size: 0.75rem;
     color: #555;
     font-family: "Lexend", Helvetica, sans-serif;
     font-style: normal;
@@ -33,6 +35,11 @@ p {
 
 ul {
     list-style-type: none;
+}
+
+
+.shoppingcart {
+    max-width: 100rem;
 }
 
 img.cartthumbnail {
