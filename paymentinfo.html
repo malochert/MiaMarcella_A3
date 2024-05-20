@@ -11,30 +11,6 @@
 
 
 <body>
-    <header>
-        <h3>Slow Clay Center</h3>
-        <nav class="container">
-            <div class="column">
-                Home
-            </div>
-            <div class="column">
-                About
-            </div>
-            <div class="column">
-                Classes
-            </div>
-            <div class="column">
-                Events
-            </div>
-            <div class="column">
-                Products
-            </div>
-            <div class="column">
-                Contacts
-            </div>
-        </nav>
-    </header>
-
     <main class="twocolumns">
         <div class="bookingdetails">
             <div class="productlist">
@@ -65,7 +41,7 @@
                     <h2 class="price">$625</h2>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="590" height="2" viewBox="0 0 1090 2" fill="none" class="linebox">
                 <path d="M0 1H1090" class="separator" />
             </svg>
             <div class="totals row">
@@ -78,34 +54,39 @@
                     <h2>$0</h2>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="1090" height="2" viewBox="0 0 1090 2" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="590" height="2" viewBox="0 0 1090 2" fill="none" class="linebox">
                 <path d="M0 1H1090" class="separator" />
             </svg>
         </div>
         <div class="userinfo">
-            <h2>Payment Information:</h2>
+            <h1>Payment Information:</h1>
             <form>
-                <label for="payment_email">Email Address</label>
-                <input type="text" class="textInput" id="payment_email" name="email" />
-                <label for="payment_name">Name on Card</label>
-                <input type="text" class="textInput" id="payment_name" name="name" />
-                <label for="payment_cardno">Card Number</label>
-                <input type="text" class="textInput" id="payment_cardno" name="cardno" />
-                <label for="payment_cvv">CVV/CVC</label>
-                <input type="text" class="textInput" id="payment_cvv" name="cvv" />
-                <label for="payment_expiry">Expiry</label>
-                <input type="text" class="textInput" id="payment_expiry" name="expiry" />
+                <div class="formitem">
+                    <label for="payment_email"><p>Email Address</p></label>
+                    <input type="text" class="textInput" id="payment_email" name="email" />
+                </div>
+                <div class="formitem">
+                    <label for="payment_name"><p>Name on Card</p></label>
+                    <input type="text" class="textInput" id="payment_name" name="name" />
+                </div>
+                <div class="formitem">
+                    <label for="payment_cardno"><p>Card Number</p></label>
+                    <input type="text" class="textInput" id="payment_cardno" name="cardno" />
+                </div>
+                <div class>
+                    <label for="payment_cvv"><p>CVV/CVC</p></label>
+                    <input type="text" class="textInput" id="payment_cvv" name="cvv" />
+                </div>
+                <div>
+                    <label for="payment_expiry"><p>Expiry</p></label>
+                    <input type="text" class="textInput" id="payment_expiry" name="expiry" />
+                </div>
             </form>
-            <a href="#" class="button4">
-                <p>Confirm Payment</p>
+            <a href="#" class="btn btn3">
+                <p>Pay Now</p>
             </a>
         </div>
     </main>
-    <footer>
-        <h1>Contact</h1>
-        <h2>Phone: 399 437 844</h2>
-        <h2>Email: info@slowclay.com</h2>
-    </footer>
 </body>
 
 </html>

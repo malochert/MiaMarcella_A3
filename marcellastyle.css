@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
 
+@import url("reset.css");
+
+
+
 h1 {
     font-size: 5em;
-    color: #333030;
+    color: #33303;
     text-align: center;
     font-family: "Crimson Text", Times, serif;
     font-style: normal;
@@ -46,6 +50,7 @@ img.cartthumbnail {
     align-items: center;
     flex-direction: row;
     padding-bottom: 2em;
+    flex-shrink: inherit;
 }
 
 .productlist, .totals {
@@ -64,8 +69,10 @@ img.cartthumbnail {
     padding-right: 15em;
 }
 
-.button1, .button2, .button4 {
+.btn > p {
     text-align: center;
+    vertical-align: center;
+    text-decoration: none;
     font-size: 32px;
     border-radius: 30px;
     width: 455px;
@@ -73,14 +80,19 @@ img.cartthumbnail {
     flex-shrink: 0;
 }
 
-.button1 {
+.btn1 {
     color: #000;
-    background: #C9CDB0;
+    background-color: #C9CDB0;
 }
 
-.button2 {
+.btn2 {
     color: #fff;
-    background: #000;
+    background-color: #000;
+}
+
+.btn3 > p{
+    color: #fff;
+    background-color: #000;
 }
 
 .twocolumns {
@@ -94,11 +106,12 @@ img.cartthumbnail {
     gap: 3em;
     flex-direction: column;
     align-items: center;
-    flex-shrink: 0;
-    width: 100%;
+    padding: 0;
+    height: 100vh;
+    justify-content: center;
 }
 
-.confirmationpage > h1 {
+.confirmationpage > h1, .userinfo > h1 {
     font-size: 40px;
 }
 
@@ -118,12 +131,27 @@ img.cartthumbnail {
     stroke: #000;
 }
 
-.linebox {
-    margin-left: 7em;
-
+.bookingdetails {
+    align-items: center;
+    max-width: 40em;
 }
 
-footer{
-    padding: 1em;
-    background-color: rgb(222, 185, 157);
+.bookingdetails > .row {
+    width: 30em;
+}
+
+.linebox {
+    margin-left: 6em;
+}
+
+.textInput {
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
