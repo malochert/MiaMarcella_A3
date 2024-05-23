@@ -13,13 +13,20 @@ h1 {
     line-height: normal;
 }
 
-h2 {
+h2, h3 {
     font-size: 2rem;
     color: #555;
     font-family:"Crimson Text", Times, serif;
     font-style: normal;
-    font-weight: 700;
     line-height: normal;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 400;
 }
 
 p {
@@ -67,6 +74,10 @@ img.cartthumbnail {
     padding-right: 15em;
 }
 
+.totals {
+    padding-top: 50px;
+}
+
 .buttons {
     display: flex;
     flex-wrap: wrap;
@@ -78,15 +89,15 @@ img.cartthumbnail {
     padding-right: 15em;
 }
 
-.btn > p {
+.btn {
+    width: 516px;
+    height: 79px;
+    flex-shrink: 0;
     text-align: center;
     vertical-align: center;
-    text-decoration: none;
     font-size: 32px;
     border-radius: 30px;
-    width: 455px;
-    height: 70px;
-    flex-shrink: 0;
+    margin: 2em;
 }
 
 .btn1 {
@@ -95,11 +106,6 @@ img.cartthumbnail {
 }
 
 .btn2 {
-    color: #fff;
-    background-color: #000;
-}
-
-.btn3 > p{
     color: #fff;
     background-color: #000;
 }
@@ -140,6 +146,16 @@ img.cartthumbnail {
     stroke: #000;
 }
 
+.linebox {
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.taxinfo {
+    color: #909090;
+    padding-top: 50px;
+}
+
 .bookingdetails {
     align-items: center;
     max-width: 40em;
@@ -147,10 +163,6 @@ img.cartthumbnail {
 
 .bookingdetails > .row {
     width: 30em;
-}
-
-.linebox {
-    margin-left: 6em;
 }
 
 .textInput {
@@ -191,9 +203,4 @@ form {
 .plus {
     margin-top: 12px;
     margin-right: 16px;
-}
-
-.price {
-    font-style: normal;
-    font-weight: 400;
 }
