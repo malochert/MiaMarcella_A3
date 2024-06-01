@@ -42,6 +42,9 @@ ul {
     list-style-type: none;
 }
 
+.pagetitle {
+    margin-top: 1.5em;
+}
 
 .shoppingcart {
     max-width: 100rem;

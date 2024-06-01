@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="marcellastyle.css">
+    <script src="script.js"></script>
     <title>Shopping Cart</title>
 </head>
 
 <body>
     <main class="shoppingcart">
-        <h1>Shopping Cart</h1>
+        <h1 class="pagetitle">Shopping Cart</h1>
         <div class="productlist">
             <div class="row">
                 <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
@@ -24,10 +25,10 @@
                     </li>
                 </ul>
                 <div class="peoplebutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
+                    <button onclick="minusPerson()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
                         <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round"/>
-                    </svg>
-                    <p class="peoplenumber">1</p>
+                    </svg></button>
+                    <p class="peoplenumber" id="pn1"> 1 </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="plus">
                         <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
