@@ -1,29 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
 
-h1{
-    font-family: "Crimson Text";
-    font-size: 64px;
-    padding: 0%;
-}
-
 body{
     margin: 0;
     font-family: "Crimson Text";
 }
 
-header{}
+h1{
+    font-size: 64px;
+    color: #333030;
+    text-align: center;
+    font-family: "Crimson Text", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2{
+    font-size: 48px;
+    color: #000000;
+    font-family:"Crimson Text", Times, serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+h3,h4,h5,h6,.h7,.h8,.h9{
+    color: #555;
+    font-family:"Crimson Text", Times, serif;
+    font-style: normal;
+    line-height: 1px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 36px;
+}
+
+h5{
+    font-size: 32px;
+}
+
+h6{
+    font-size: 24px;
+}
+
+.h7{
+    font-size: 16px;
+}
+
+.h8{
+    font-size: 14px;
+}
+
+.h9{
+    font-size: 12px;
+}
+
+
 
 .container{
-    font-family: "Crimson Text";
-    font-size: 19px;
     display: flexbox;
     text-align: center;
+    padding: auto;
     position:fixed;
     z-index: 1;
     width: 100%;
     background-color: white;
-    color: #000;
 }
 
 
@@ -104,6 +149,7 @@ ol, ul {
 	list-style: none;
     margin: 0;
     padding: 0;
+        
 }
   nav > ul{
     display:flex;
@@ -111,10 +157,14 @@ ol, ul {
   }
 
   nav li{
+    font-size: 24px;
     padding: 1em 2em;
     width: 100%;
-    background-color: #E8E8E8;
-    color: rgb(0, 0, 0);
+    color: #555;
+    font-family:"Crimson Text", Times, serif;
+    font-style: normal;
+    line-height: 34px;
+    background-color: #C9CDB0;
     transform: translateX(-0.5em);
   }
 
@@ -125,7 +175,8 @@ nav ul ul{
     top: 100%;
     transition: 0.3s;
     justify-content: center;
-    width: 63%;
+    width: 50%;
+    
 }
     
 nav li:hover ul{
