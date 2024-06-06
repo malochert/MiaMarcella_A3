@@ -70,11 +70,13 @@ img.cartthumbnail {
 
 .productlist {
     padding-top:6rem;
-}
-
-.productlist {
     margin-left: 15rem;
     margin-right: 15rem;
+}
+
+.bookingdetails {
+    margin-left: 8rem;
+    width: 50rem;
 }
 
 .breakdown {
@@ -93,6 +95,7 @@ img.cartthumbnail {
     margin-top: 3rem;
     padding-top: 3rem;
     padding-bottom: 4rem;
+    width: 50rem;
 }
 
 .total {
@@ -101,6 +104,13 @@ img.cartthumbnail {
     padding-bottom: 2.5rem;
     padding-left: 15rem;
     padding-right: 15rem;
+}
+
+.finaltotal {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+    width: 50rem;
 }
 
 .twocolumns {
@@ -143,10 +153,7 @@ img.cartthumbnail {
 .bookingdetails {
     align-items: center;
     max-width: 40rem;
-}
-
-.bookingdetails > .row {
-    width: 30rem;
+    margin-right: -5rem;
 }
 
 .classdetails {
@@ -159,6 +166,7 @@ form {
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
 }
 
@@ -228,7 +236,6 @@ form p {
 .btn {
     text-decoration: none;
     padding: 1rem 3rem;
-    width: 25rem;
     border-radius: 20px;
 }
 
@@ -238,10 +245,12 @@ form p {
 }
 
 .btn1 {
+    width: 25rem;
     background-color: #C9CDB0;
 }
 
 .btn2 {
+    width: 25rem;
     background-color: #000;
 }
 
@@ -250,17 +259,12 @@ form p {
 }
 
 .btn3 {
-    align-self: center;
-    text-decoration: none;
+    width: 300rem;
     background-color: #000;
-    width: 10rem;
-    padding: 1rem 1rem;
-    border-radius: 20px;
 }
 
 .btn3 p {
     color: #FFF;
-    font-size: 15px;
 }
 
 img.cartthumbnailmin {
