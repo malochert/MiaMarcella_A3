@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body{
     margin: 0;
@@ -16,19 +17,15 @@ h1{
     line-height: normal;
 }
 
-h2{
-    font-size: 48px;
-    color: #000000;
-    font-family:"Crimson Text", Times, serif;
-    font-style: normal;
-    line-height: normal;
-}
-
-h3,h4,h5,h6,.h7,.h8,.h9{
+h2,h3,h4,h5,h6,.h7,.h8,.h9{
     color: #555;
     font-family:"Crimson Text", Times, serif;
     font-style: normal;
     line-height: 1px;
+}
+
+h2{
+    font-size: 54px;
 }
 
 h3{
@@ -59,6 +56,10 @@ h6{
     font-size: 12px;
 }
 
+.ht{
+    margin: 10%;
+    padding-top: 10%;
+}
 
 
 .container{
@@ -114,6 +115,13 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
+}
+
+.imgtext2{
+        position: absolute;
+        padding-left: 5%;
+        display: flex;
+        top: 120%;
 }
 
 .imgtitletext {
@@ -184,17 +192,25 @@ nav li:hover ul{
     transition: 0.3s;
 }
 
-button {
+.btn {
+    font-size: 24px;
+    text-decoration: none;
+    padding: 1rem,3rem;
+    width: 25rem;
+    border-radius: 60px;
+}
+
+.schbtn{
+    font-family: lexend;
+    font-size: 14px;
+    position: absolute;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align:center;
-    font-size: 30px;
-    border-radius: 30px;
-    width: 455px;
-    height: 70px;
-    flex-shrink: 0;
-    margin-bottom: 3%;
+    top: 130%;
+    margin-left: 5%;
+    color: #000;
+    background: #EDEDED;
+    padding: 1%;
+    padding-left: 2%;
 }
 
 .button1 {
