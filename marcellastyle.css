@@ -95,32 +95,6 @@ img.cartthumbnail {
     padding-right: 15em;
 }
 
-.buttons li {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1.5rem;
-    align-items: center;
-}
-
-.btn {
-    text-decoration: none;
-    padding: 0.75rem 4rem;
-    font-size: 32px;
-    border-radius: 2rem;
-    text-align: center;
-    margin: 2em;
-}
-
-.btn1 {
-    color: #000;
-    background-color: #C9CDB0;
-}
-
-.btn2 {
-    color: #fff;
-    background-color: #000;
-}
-
 .twocolumns {
     display: flex;
     flex-direction: row;
@@ -172,16 +146,30 @@ img.cartthumbnail {
     margin-left: -4em;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+form p {
+    padding-bottom: 0.5em;
+    margin-left: 1em;
+    font-size: 14px;
+}
+
 .textInput {
+    width: 18em;
     padding: 0.75rem 1rem;
     border-radius: 30px;
     font-size: 0.9rem;
 }
 
-form {
+#payment_cvv #payment_expiry {
     display: flex;
-    flex-direction: column;
-    gap: 0.5em;
+    flex-direction: row;
+    width: 5em;
 }
 
 .peoplebutton {
@@ -210,4 +198,12 @@ form {
 .plus {
     margin-top: 12px;
     margin-right: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    
 }
