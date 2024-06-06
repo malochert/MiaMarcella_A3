@@ -13,9 +13,9 @@
 <body>
     <main class="twocolumns">
         <div class="bookingdetails">
-            <div class="productlist">
+            <div class="finalproductlist">
                 <div class="row">
-                    <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
+                    <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnailmin">
                     <ul class="classdetails">
                         <li>
                             <h2>Beginners Wheel Pottery Classes</h2>
@@ -27,7 +27,7 @@
                     <h3 class="price">$625</h3>
                 </div>
                 <div class="row">
-                    <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnail">
+                    <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnailmin">
                     <ul class="classdetails">
                         <li>
                             <h2>Wheel Taster Class</h2>
@@ -39,7 +39,7 @@
                     <h3 class="price">$625</h3>
                 </div>
             </div>
-            <div class="breakdown row">
+            <div class="finalbreakdown row">
                 <div>
                     <h2>Subtotal:</h2>
                     <h3 class="taxinfo">Tax:</h3>
@@ -75,20 +75,22 @@
                     </label>
                     <input type="text" class="textInput" id="payment_cardno" name="cardno" placeholder="Insert Card Number"/>
                 </div>
-                <div class>
-                    <label for="payment_cvv">
-                        <p>CVV/CVC</p>
-                    </label>
-                    <input type="text" class="textInput" id="payment_cvv" name="cvv" placeholder="CVV"/>
-                </div>
-                <div>
-                    <label for="payment_expiry">
-                        <p>Expiry</p>
-                    </label>
-                    <input type="text" class="textInput" id="payment_expiry" name="expiry" placeholder="MM/YY"/>
+                <div class="bottomitems">
+                    <div class="formitem">
+                        <label for="payment_cvv">
+                            <p>CVV/CVC</p>
+                        </label>
+                        <input type="text" class="textInput formitem4" id="payment_cvv" name="cvv" placeholder="CVV"/>
+                    </div>
+                    <div class="formitem">
+                        <label for="payment_expiry">
+                            <p>Expiry</p>
+                        </label>
+                        <input type="text" class="textInput formitem5" id="payment_expiry" name="expiry" placeholder="MM/YY"/>
+                    </div>
                 </div>
             </form>
-            <a href="#" class="btn btn3">
+            <a href="#" class="btn3">
                 <p>Pay Now</p>
             </a>
         </div>
