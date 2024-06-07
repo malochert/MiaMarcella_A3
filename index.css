@@ -182,7 +182,7 @@ ol, ul {
     font-family:"Crimson Text", Times, serif;
     font-style: normal;
     line-height: 34px;
-    background-color: #C9CDB0;
+    background-color: #E8E8E8;
     transform: translateX(-0.3em);
   }
 
@@ -247,6 +247,7 @@ nav li:hover ul{
 
 .sbtntxt{
     padding: 10px 5px;
+    
 }
 
 .moreinfobtn{
@@ -269,7 +270,7 @@ nav li:hover ul{
 }
 
 .carouselcol{
-    width: 330px;
+    width: 320px;
     height: auto;
 }
 
