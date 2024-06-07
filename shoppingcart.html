@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="formbackground" id="formbg" onclick="closeForm()"></div>
     <main class="shoppingcart">
         <h1 class="pagetitle">Shopping Cart</h1>
         <div class="productlist">
@@ -83,10 +84,10 @@
     <div class="formpopup" id="methodform">
         <form action="/action_page.php" class="formcontainer">
           <h2>Select payment <br> method:</h2>
-          <label><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><img src="assets/mastercardlogo.png" alt="mastercardlogo" class="paymentlogo"></label>
-          <label><input type="radio" name="paymethod" class="radiomethod" value="Visa"><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo"></label>
-          <label><input type="radio" name="paymethod" class="radiomethod" value="Apple"><img src="assets/applelogo.png" alt="applelogo" class="paymentlogo"></label>
-          <label><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><img src="assets/paypallogo.png" alt="paypallogo" class="paymentlogo"></label>
+          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span class="checkmark"></span><img src="assets/mastercardlogo.png" alt="mastercardlogo" class="paymentlogo1"></label>
+          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Visa"><span class="checkmark"></span><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo2"></label>
+          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Apple"><span class="checkmark"></span><img src="assets/applelogo.png" alt="applelogo" class="paymentlogo3"></label>
+          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><span class="checkmark"></span><img src="assets/paypallogo.png" alt="paypallogo" class="paymentlogo4"></label>
           
           <a href="#" class="btn4"><p>Pay Now</p></a>
           <a href="#" class="closebtn" onclick="closeForm()"><p>Close</p></a>
