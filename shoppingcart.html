@@ -75,10 +75,24 @@
             <a href="#" class="btn btn1">
                 <p>Continue Shopping</p>
             </a>
-            <a href="#" class="btn btn2">
+            <a href="#" class="btn btn2" onclick="openForm()">
                 <p>Payment Method</p>
             </a>
         </div>
+        <div class="formpopup" id="methodform">
+            <form action="/action_page.php" class="form-container">
+              <h2>Select Payment Method</h2>
+          
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+          
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+          
+              <button type="submit" class="btn">Login</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+          </div>
     </main>
 </body>
 
