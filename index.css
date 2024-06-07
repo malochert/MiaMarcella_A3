@@ -48,6 +48,7 @@ h6{
 }
 
 .h8{
+    font-family: lexend;
     font-size: 14px;
     font-weight: 700;
 }
@@ -254,4 +255,79 @@ nav li:hover ul{
     height: 20px;
     object-fit: contain;
     align-self: top;
+}
+
+
+
+
+
+/* Carousel */
+
+.carouselcontainer{
+    display: flex;
+    padding: 1px;
+}
+
+.carouselcol{
+    width: 330px;
+    height: auto;
+}
+
+.cc1{
+    margin-left: 5%;
+}
+
+.cc2{
+    margin-left: 2%;
+}
+
+.cc3{
+    margin-left: 2%;
+}
+
+.cc4{
+    margin-left: 2%;
+}
+
+.carouselcol img{
+    width: 100%;
+    height: auto;
+}
+
+div > .h7 {
+    position: absolute;
+    border-radius: 30px;
+    padding: 1.5rem;
+    display: flex;
+    top: 151%;
+    background-color: rgba(255, 255, 255, 0.763);
+}
+
+div > .h9 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    margin-left: 15px;
+    padding: 100%;
+    border-radius: 30px;
+    padding: 2rem;
+    display: flex;
+    top: 158%;
+    background-color: rgba(255, 255, 255, 0.718);
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.moreinfobtn {
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.vtext{
+    margin-left: 5%;
+    padding-bottom: 15px;
 }
