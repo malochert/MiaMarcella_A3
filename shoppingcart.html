@@ -79,21 +79,19 @@
                 <p>Payment Method</p>
             </a>
         </div>
-        <div class="formpopup" id="methodform">
-            <form action="/action_page.php" class="form-container">
-              <h2>Select Payment Method</h2>
-          
-              <label for="email"><b>Email</b></label>
-              <input type="text" placeholder="Enter Email" name="email" required>
-          
-              <label for="psw"><b>Password</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" required>
-          
-              <button type="submit" class="btn">Login</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            </form>
-          </div>
     </main>
+    <div class="formpopup" id="methodform">
+        <form action="/action_page.php" class="formcontainer">
+          <h2>Select payment <br> method:</h2>
+          <label><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><img src="assets/mastercardlogo.png" alt="mastercardlogo" class="paymentlogo"></label>
+          <label><input type="radio" name="paymethod" class="radiomethod" value="Visa"><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo"></label>
+          <label><input type="radio" name="paymethod" class="radiomethod" value="Apple"><img src="assets/applelogo.png" alt="applelogo" class="paymentlogo"></label>
+          <label><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><img src="assets/paypallogo.png" alt="paypallogo" class="paymentlogo"></label>
+          
+          <a href="#" class="btn4"><p>Pay Now</p></a>
+          <a href="#" class="closebtn" onclick="closeForm()"><p>Close</p></a>
+        </form>
+    </div>
 </body>
 
 </html>

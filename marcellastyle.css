@@ -50,6 +50,11 @@ ul {
     max-width: 100rem;
 }
 
+.blurred {
+    max-width: 100rem;
+    filter: blur(10px);
+}
+
 img.cartthumbnail {
     width: 239px;
     height: 152px;
@@ -260,6 +265,22 @@ form p {
     color: #FFF;
 }
 
+.btn4 {
+    width: 15rem;
+    background-color: #000;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    border-radius: 20px;
+}
+
+.btn4 p {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+    margin-left: -0.2rem;
+    margin-top: 0.4rem;
+}
+
 .btn3container {
     width: 20rem;
 }
@@ -282,4 +303,46 @@ img.cartthumbnailmin {
     height: 152px;
     border-radius: 30px;
     object-fit: cover;
+}
+
+.radiomethod:checked {
+    background-color: black;
+}
+
+.formpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin: 0 35rem;
+    z-index: 9;
+    width: 20rem;
+    background-color: #FFF;
+}
+
+.formpopup h2 {
+    text-align: center;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.formcontainer label {
+    width: 15rem;
+    height: 3.5rem;
+    border: 1px solid #555555;
+    border-radius: 20px;
+}
+
+.formcontainer input {
+    margin-top: 1.3rem;
+    margin-left: 1rem;
+}
+
+.formcontainer img {
+    scale: 10%;
+    padding-left: 300px;
 }
