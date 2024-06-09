@@ -5,7 +5,7 @@
 
 h1 {
     font-size: 64px;
-    color: #333030;
+    color: #555;
     text-align: center;
     font-family: "Crimson Text", Times, serif;
     font-style: normal;
@@ -13,21 +13,64 @@ h1 {
     line-height: normal;
 }
 
-h2,
-h3 {
-    font-size: 2rem;
+h2,h3,h4,h5,h6,.h7,.h8,.h9{
     color: #555;
-    font-family: "Crimson Text", Times, serif;
-    font-style: normal;
+    font-family:"Crimson Text", Times, serif;
     line-height: normal;
 }
 
-h2 {
+h2{
+    font-size: 54px;
     font-weight: 600;
 }
 
-h3 {
-    font-weight: 400;
+h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h4{
+    font-size: 36px;
+}
+
+h5{
+    font-size: 32px;
+}
+
+h6{
+    font-size: 24px;
+}
+
+.h7{
+    font-size: 16px;
+}
+
+.h8{
+    font-family: lexend;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.h9{
+    font-size: 12px;
+}
+
+.maintitle{
+    font-size: 32px;
+    font-weight: bold;
+    color: #333030;
+    font-family:"Crimson Text", Times, serif;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.selectpaymentmethod {
+    font-weight: 600;
+    text-align: center;
 }
 
 p {
@@ -39,12 +82,69 @@ p {
     line-height: normal;
 }
 
+.container{
+    display: flexbox;
+    text-align: center;
+    padding: auto;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    width: 100vw;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+nav li {
+    font-size: 24px;
+    padding: 1em 2em;
+    width: 100%;
+    color: #555;
+    font-family: "Crimson Text", Times, serif;
+    font-style: normal;
+    line-height: 34px;
+    background-color: #E8E8E8;
+    transform: translateX(-0.3em);
+}
+
+nav ul ul {
+    transform: scale(1, 0);
+    transform-origin: top right;
+    position: fixed;
+    top: 100%;
+    transition: 0.3s;
+    justify-content: center;
+    width: 63%;
+    left: 5px;
+}
+
+nav li:hover ul {
+    transform: scale(1, 1);
+    transition: 0.3s;
+}
+
 ul {
     list-style-type: none;
 }
 
-.pagetitle {
-    margin-top: 1.5rem;
+main {
+    padding-top: 16rem;
+    padding-bottom: 6rem;
 }
 
 .shoppingcart {
@@ -91,7 +191,7 @@ img.cartthumbnail {
     border-bottom: 1px solid #000;
     margin-top: 3rem;
     padding-top: 3rem;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     margin-left: 15rem;
     margin-right: 15rem;
 }
@@ -106,8 +206,8 @@ img.cartthumbnail {
 }
 
 .total {
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
     padding-bottom: 2.5rem;
     padding-left: 15rem;
     padding-right: 15rem;
@@ -115,7 +215,7 @@ img.cartthumbnail {
 
 .finaltotal {
     margin-top: 0.5rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-bottom: 2.5rem;
     width: 40rem;
 }
@@ -127,7 +227,8 @@ img.cartthumbnail {
     flex-shrink: 0.5;
     flex-wrap: wrap;
     max-width: 80rem;
-    padding-top: 5rem;
+    padding-top: 16rem;
+    padding-bottom: 6rem;
 }
 
 .confirmationpage {
@@ -136,14 +237,18 @@ img.cartthumbnail {
     gap: 3rem;
     flex-direction: column;
     align-items: center;
-    padding: 0;
+    padding-top: 10rem;
     height: 100vh;
     justify-content: center;
 }
 
-.confirmationpage>h1,
+.confirmationpage h1,
 .userinfo>h1 {
     font-size: 40px;
+}
+
+.confirmationpage h1 {
+    color: #000;
 }
 
 .confirmationpage>h2 {
@@ -156,7 +261,8 @@ img.cartthumbnail {
 
 .taxinfo {
     color: #909090;
-    padding-top: 50px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .bookingdetails {
@@ -284,21 +390,21 @@ form p {
     margin-top: 0.4rem;
 }
 
-.btn3container {
-    width: 20rem;
-}
-
 .btn3 {
     background-color: #000;
     text-decoration: none;
-    width: 10rem;
+    width: 14rem;
     padding: 0.75rem 2rem;
     border-radius: 2rem;
     font-size: 0.9rem;
 }
 
 .btn3 p {
+    font-size: 1.5rem;
     color: #FFF;
+    text-align: center;
+    margin-left: -0.2rem;
+    margin-top: 0.4rem;
 }
 
 .closebtn {
@@ -313,6 +419,10 @@ img.cartthumbnailmin {
     height: 152px;
     border-radius: 30px;
     object-fit: cover;
+}
+
+#img1 {
+    object-position: 50% 80%;
 }
 
 .radiomethod:checked {
@@ -408,4 +518,11 @@ img.cartthumbnailmin {
 .paymentlogo4 {
     margin-left: -24rem;
     margin-top: -7.75rem;
+}
+
+footer{
+    padding: 2em;
+    padding-left: 10em;
+    padding-bottom: 4em;
+    background-color: rgba(150, 123, 109, 0.35);
 }
