@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 body{
-    margin: 0;
     font-family: "Crimson Text, Lexend";
 }
 
@@ -20,7 +19,6 @@ h1{
 h2,h3,h4,h5,h6,.h7,.h8,.h9{
     color: #555;
     font-family:"Crimson Text", Times, serif;
-    line-height: 1px;
 }
 
 h2{
@@ -258,75 +256,102 @@ nav li:hover ul{
     align-self: top;
 }
 
-
-
-
-
-/* Carousel */
-
 .carouselcontainer{
     display: flex;
     padding: 1px;
+    column-gap: 1vw;
+    margin-left: 3%;
+    margin-bottom: 5%;
 }
-
-.carouselcol{
+.carouselcol {
     width: 320px;
     height: auto;
-}
-
-.cc1{
-    margin-left: 5%;
-}
-
-.cc2{
+    position: relative; 
     margin-left: 2%;
 }
 
-.cc3{
-    margin-left: 2%;
-}
-
-.cc4{
-    margin-left: 2%;
-}
-
-.carouselcol img{
+.carouselcol img {
     width: 100%;
     height: auto;
 }
 
-div > .h7 {
-    position: absolute;
+.cc-overlay .h7{
+    font-weight:bold;
     border-radius: 30px;
-    padding: 1.5rem;
-    display: flex;
-    top: 151%;
+    padding: 17px;
     background-color: rgba(255, 255, 255, 0.763);
+    text-align: center;
+    line-height:normal;
 }
 
-div > .h9 {
-    display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    margin-left: 15px;
-    padding: 100%;
+
+.cc-overlay h4{
+    font-weight:bold;
     border-radius: 30px;
-    padding: 2rem;
-    display: flex;
-    top: 158%;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.763);
+    margin: 8%;
+    margin-right: 25%;
+}
+
+.imgtextcarousel{
+    color: #555;
+    font-family: lexend, Times, serif;
+    font-size: 12px;
+    border-radius: 30px;
+    padding: 10px;
     background-color: rgba(255, 255, 255, 0.718);
-    flex-wrap: wrap;
-    word-wrap: break-word;
+    text-align: center;
+    width: 90%;
 }
 
 .moreinfobtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
     width: 24px;
     height: 24px;
-    margin-top: 10px;
     background: none;
     border: none;
     cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: rgb(246, 245, 245);
+    display: flex;
+    justify-content: center;
 }
+
+.moreinfobtn img {
+    transform: none;
+    width: 24px;
+    height: 24px;
+    bottom: 21px;
+}
+
+.shoppingbtn {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: rgb(246, 245, 245);
+    display: flex;
+    justify-content: center;
+}
+
+.shoppingbtn img {
+    transform: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    bottom: 21px;
+}
+
 
 .vtext{
     margin-left: 5%;
