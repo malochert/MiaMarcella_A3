@@ -12,7 +12,7 @@
 
 <body>
     <header class="container">
-        <h5 class="maintitle">Slow Clay Center</h5>
+        <a href="#" style="text-decoration: none" onclick="window.location.href='index.html'"><h5 class="maintitle">Slow Clay Center</h5></a>
         <nav>
             <ul>
               <li>
@@ -58,9 +58,9 @@
                     </li>
                 </ul>
                 <div class="peoplebutton">
-                    <button onclick="minusPerson()"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
                         <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round"/>
-                    </svg></button>
+                    </svg>
                     <p class="peoplenumber" id="pn1"> 1 </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="plus">
                         <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
@@ -121,7 +121,7 @@
           <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Apple"><span class="checkmark"></span><img src="assets/applelogo.png" alt="applelogo" class="paymentlogo3"></label>
           <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><span class="checkmark"></span><img src="assets/paypallogo.png" alt="paypallogo" class="paymentlogo4"></label>
           
-          <a href="#" class="btn4"><p>Pay Now</p></a>
+          <a href="#" class="btn4" onclick="window.location.href='paymentinfo.html'"><p>Pay Now</p></a>
           <a href="#" class="closebtn" onclick="closeForm()"><p>Close</p></a>
         </form>
     </div>
