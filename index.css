@@ -15,7 +15,6 @@ h1{
     font-family: "Crimson Text", Times, serif;
     font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 h2,h3,h4,h5,h6,.h7,.h8,.h9{
@@ -82,7 +81,8 @@ h6{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
+    line-height: 1.5;
 }
 
 .title{
@@ -96,6 +96,28 @@ h6{
     line-height: 90px;
     background-color:#fff
 }
+
+.center > h5{
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center > h6{
+    margin: 0%;
+    margin-bottom: 1.5%;
+    font-weight: 400;
+}
+
+.center > h3{
+    padding: 1%;
+    margin-top: 1%;
+    margin-bottom: 0%;
+    justify-content: center;
+    text-align: center;
+}
+
 
 .container{
     display: flexbox;
@@ -127,8 +149,8 @@ h6{
 .column3{
     float: left;
     display: grid;
-    margin-left: 150px;
-    margin-top: 10px;
+    margin-left: 11%;
+    margin-top: 1%;
     padding: 1em;
     width: 35%;
 }
@@ -176,7 +198,16 @@ img{
 
 .imgtitletext {
     position: absolute;
-    top: 100%;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.imgtitletext2{
+    position: absolute;
+    padding: 5%;
+    top: 82%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
@@ -198,9 +229,11 @@ img{
 }
 
 footer{
-    padding: 2em;
+    padding: 1em;
     padding-left: 10em;
     padding-bottom: 4em;
+    line-height: 0;
+    margin: 0%;
     background-color: rgba(150, 123, 109, 0.35);
 }
 
@@ -418,9 +451,92 @@ nav li:hover ul{
 
 .productimg{
     width: 100vw;
-    margin-top: 5%;
+    margin-top: 2%;
+}
+
+.productimg2{
+    margin: 0%;
+    width: 100%;
+    margin-top: 4%;
 }
 
 .infotitle{
+    margin-top: 4%;
     margin-left: 5%;
+}
+
+/* calendar */
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    box-shadow: 0 0 0 2px #ddd;
+    margin-left: 25%;
+}
+th, td {
+    font-family: "lexend";
+    text-align: center;
+    padding: 2.5%;
+    width: calc(100%/7);
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+.weekdays th:nth-child(odd), .weekdays th:nth-child(even) {
+    font-family: "Lexend" ;
+    color: #696969;
+}
+
+.days td {
+    font-family: "Lexend" ;
+    font-size: 14px;
+}
+
+.nextMonthDays td {
+    font-family: "Lexend" ;
+    color: #ddd;
+}
+
+.caption {
+    font-family: "Lexend";;
+    font-size: 18px;
+    text-align: center;
+    padding: 3%;
+    margin-left: -0.3%;
+    margin-right: -0.3%;
+    background-color: #f2f2f2;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 2px solid #ddd;
+}
+
+.bottomRounded {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.previousDays, .nextMonthDays{
+    color:#bdbaba;
+}
+
+.emphasise{
+    color: #83a365d0;
+    font-size: 25px;
+}
+
+.cartbtn {
+    background-color: #C9CDB0;
+    width: 30rem;
+    height: 10vh;
+    border: none;
+    border-radius: 30px;
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-left: 33%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 }
