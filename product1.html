@@ -8,7 +8,9 @@
 </head>
 <body>
     <header class="container">
-      <span class="title">Slow Clay Center</span>
+      <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+      <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+      <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
         <nav>
             <ul>
               <li>
@@ -45,9 +47,11 @@
         </section>
         <section class="center">
             <h1 class="imgtitletext">Wheel Taster Class</h1>
-            <h5>PRICE</h5>
-            <h6>$135 Normal</h6>
-            <h6>$95 Concession<h6>
+        </section>
+        <section class="prices">
+          <h5>PRICE</h5>
+          <h6>$135 Normal</h6>
+          <h6>$95 Concession<h6>
         </section>
         <section>
             <div class="column3">
@@ -137,7 +141,7 @@
               <li>NEW: Refund insurance is now available at the checkout for an extra 10%. We strongly recommend it as we do not give refunds under any circumstances.</li>
               <li>We encourage you to sign up to our newsletter and add us to your email contact list for all updates.</li>
             </ul>
-            <button class="cartbtn">
+            <button class="cartbtn" onclick="window.location.href='shoppingcart.html'">
               <h5 class="centercartbtn">Add to Cart</h5>
             </button>
         </section>
