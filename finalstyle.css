@@ -19,6 +19,18 @@ h1{
     font-weight: 700;
 }
 
+@media screen and (max-width: 390px){
+    h1{
+
+        font-size: 2rem;
+        color: #333030;
+        text-align: center;
+        font-family: "Crimson Text", Times, serif;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
 h2,h3,h4,h5,h6,.h7,.h8,.h9{
     color: #555;
     font-family:"Crimson Text", Times, serif;
@@ -84,6 +96,12 @@ h6{
     padding-top: 10%;
 }
 
+@media screen and (max-width: 390px){
+    .ht{
+        margin: 2%;
+    }
+}
+
 .info{
     margin-left: 5%;
     margin-right: 10%;
@@ -107,6 +125,20 @@ h6{
     font-weight: 700;
     line-height: 90px;
     background-color:#fff
+}
+
+@media screen and (max-width: 390px){
+    .title{
+        margin-top: 2%;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+        font-family: "Crimson Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        background-color:#fff
+    }
 }
 
 .back{
@@ -225,6 +257,10 @@ img{
         padding-left: 5%;
         display: flex;
         top: 100%;
+}
+
+@media screen (max-width: 390px;){
+    
 }
 
 .imgtext3{
@@ -984,4 +1020,30 @@ img.cartthumbnailmin {
 .paymentlogo4 {
     margin-left: -24rem;
     margin-top: -7.75rem;
+}
+
+
+.hide-on-small {
+    display: block;
+}
+.hide-on-large {
+    display: block;
+}
+
+/* Hide elements on small screens */
+@media (max-width: 390px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+/* Hide elements on large screens */
+@media (min-width: 391px) {
+    .hide-on-large {
+        display: none;
+    }
+}
+
+.mimg{
+    width: 100%;
 }
