@@ -93,35 +93,38 @@
                     <label for="payment_email">
                         <p>Email Address</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_email" name="email" placeholder="Insert Email"/>
+                    <input type="text" class="textInput" id="payment_email" name="email" placeholder="Insert Email" required/>
                 </div>
                 <div class="formitem">
                     <label for="payment_name">
                         <p>Name on Card</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_name" name="name" placeholder="Insert Name"/>
+                    <input type="text" class="textInput" id="payment_name" name="name" placeholder="Insert Name" required/>
                 </div>
                 <div class="formitem">
                     <label for="payment_cardno">
                         <p>Card Number</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_cardno" name="cardno" placeholder="Insert Card Number"/>
+                    <input type="text" class="textInput" id="payment_cardno" name="cardno" placeholder="Insert Card Number" required/>
                 </div>
                 <div class="bottomitems">
                     <div class="formitem">
                         <label for="payment_cvv">
                             <p>CVV/CVC</p>
                         </label>
-                        <input type="text" class="textInput formitem4" id="payment_cvv" name="cvv" placeholder="CVV"/>
+                        <input type="text" class="textInput formitem4" id="payment_cvv" name="cvv" placeholder="CVV" required/>
                     </div>
                     <div class="formitem">
                         <label for="payment_expiry">
                             <p>Expiry</p>
                         </label>
-                        <input type="text" class="textInput formitem5" id="payment_expiry" name="expiry" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}"/>
+                        <input type="text" class="textInput formitem5" id="payment_expiry" name="expiry" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" required/>
                     </div>
                 </div>
-                <a href="#" class="btn3" onclick="window.location.href='paymentconfirmation.html'">
+                <button href="#" class="btn3" id="first_button" type="submit" onsubmit="return secondButton()">
+                    <p>Submit</p>
+                </button>
+                <a href="#" class="btn3" id="second_button" onclick="window.location.href='paymentconfirmation.html'">
                     <p>Pay Now</p>
                 </a>
             </form>

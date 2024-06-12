@@ -12,36 +12,38 @@
 
 <body>
     <header class="container">
-        <a href="#" style="text-decoration: none" onclick="window.location.href='index.html'"><h5 class="maintitle">Slow Clay Center</h5></a>
+        <a href="#" style="text-decoration: none" onclick="window.location.href='index.html'">
+            <h5 class="maintitle">Slow Clay Center</h5>
+        </a>
         <nav>
             <ul>
-              <li>
-                Home
-              </li>
-              <li>
-                About
-                <ul>
-                    <li>News</li>
-                    <li>Blog</li>
-                    <li>FAQs</li>
-                    <li>Testimonials</li>
-                    <li>About Us</li>
-                </ul>        
-              </li>
-              <li>
-                Classes
-              </li>
-              <li>
-                Events
-              </li>
-              <li>
-                Products       
-              </li>
-              <li>
-                Contacts
-              </li>
+                <li>
+                    Home
+                </li>
+                <li>
+                    About
+                    <ul>
+                        <li>News</li>
+                        <li>Blog</li>
+                        <li>FAQs</li>
+                        <li>Testimonials</li>
+                        <li>About Us</li>
+                    </ul>
+                </li>
+                <li>
+                    Classes
+                </li>
+                <li>
+                    Events
+                </li>
+                <li>
+                    Products
+                </li>
+                <li>
+                    Contacts
+                </li>
             </ul>
-          </nav>
+        </nav>
     </header>
     <div class="formbackground" id="formbg" onclick="closeForm()"></div>
     <main class="shoppingcart">
@@ -58,12 +60,15 @@
                     </li>
                 </ul>
                 <div class="peoplebutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
-                        <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none"
+                        class="minus">
+                        <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round" />
                     </svg>
                     <p class="peoplenumber" id="pn1"> 1 </p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="plus">
-                        <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        class="plus">
+                        <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </div>
                 <h5 class="price">$625</h5>
@@ -79,12 +84,15 @@
                     </li>
                 </ul>
                 <div class="peoplebutton">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none" class="minus">
-                        <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none"
+                        class="minus">
+                        <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round" />
                     </svg>
                     <p class="peoplenumber">1</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" class="plus">
-                        <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        class="plus">
+                        <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </div>
                 <h5 class="price">$625</h5>
@@ -97,7 +105,7 @@
             </div>
             <div>
                 <h5>$1250</h2>
-                <h5 class="taxinfo">$0</h5>
+                    <h5 class="taxinfo">$0</h5>
             </div>
         </div>
         <div class="total row">
@@ -105,7 +113,7 @@
             <h5>$1250</h5>
         </div>
         <div class="buttons">
-            <a href="#" class="btn btn1">
+            <a href="#" class="btn btn1" onclick="window.location.href='index.html'">
                 <p>Continue Shopping</p>
             </a>
             <a href="#" class="btn btn2" onclick="openForm()">
@@ -115,14 +123,25 @@
     </main>
     <div class="formpopup" id="methodform">
         <form action="/action_page.php" class="formcontainer">
-          <h5 class="selectpaymentmethod">Select payment <br> method:</h5>
-          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span class="checkmark"></span><img src="assets/mastercardlogo.png" alt="mastercardlogo" class="paymentlogo1"></label>
-          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Visa"><span class="checkmark"></span><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo2"></label>
-          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Apple"><span class="checkmark"></span><img src="assets/applelogo.png" alt="applelogo" class="paymentlogo3"></label>
-          <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><span class="checkmark"></span><img src="assets/paypallogo.png" alt="paypallogo" class="paymentlogo4"></label>
-          
-          <a href="#" class="btn4" onclick="window.location.href='paymentinfo.html'"><p>Pay Now</p></a>
-          <a href="#" class="closebtn" onclick="closeForm()"><p>Close</p></a>
+            <h5 class="selectpaymentmethod">Select payment <br> method:</h5>
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span
+                    class="checkmark"></span><img src="assets/mastercardlogo.png" alt="mastercardlogo"
+                    class="paymentlogo1"></label>
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Visa"><span
+                    class="checkmark"></span><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo2"></label>
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Apple"><span
+                    class="checkmark"></span><img src="assets/applelogo.png" alt="applelogo"
+                    class="paymentlogo3"></label>
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><span
+                    class="checkmark"></span><img src="assets/paypallogo.png" alt="paypallogo"
+                    class="paymentlogo4"></label>
+
+            <a href="#" class="btn4" onclick="window.location.href='paymentinfo.html'">
+                <p>Pay Now</p>
+            </a>
+            <a href="#" class="closebtn" onclick="closeForm()">
+                <p>Close</p>
+            </a>
         </form>
     </div>
     <footer>
