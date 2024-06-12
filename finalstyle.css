@@ -1,7 +1,8 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+@import url("reset.css");
 
 body{
     margin: 0%;
@@ -38,6 +39,11 @@ h3{
     text-align: left;
 }
 
+/*h3{
+    font-size: 40px;
+    font-weight: bold;
+}*/
+
 h4{
     font-size: 36px;
 }
@@ -62,6 +68,12 @@ h6{
     margin-top: 0%;
     padding-top: 0%;
 }
+
+/*.h8{
+    font-family: lexend;
+    font-size: 14px;
+    font-weight: 700;
+}*/
 
 .h9{
     font-size: 12px;
@@ -319,6 +331,17 @@ nav li:hover ul{
     border-radius: 60px;
 }
 
+/*.btn {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}*/
+
+.btn p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
 .schbtn{
     font-family: lexend;
     font-size: 14px;
@@ -570,4 +593,395 @@ th {
     margin-left: 33%;
     margin-bottom: 5%;
     margin-top: 5%;
+}
+
+.selectpaymentmethod {
+    font-weight: 600;
+    text-align: center;
+}
+
+main {
+    padding-top: 16rem;
+    padding-bottom: 6rem;
+}
+
+.shoppingcart {
+    max-width: 100rem;
+}
+
+.blurred {
+    max-width: 100rem;
+    filter: blur(10px);
+}
+
+img.cartthumbnail {
+    width: 239px;
+    height: 152px;
+    border-radius: 30px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 2rem;
+    flex-shrink: inherit;
+}
+
+.productlist {
+    padding-top: 6rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.bookingdetails {
+    margin-left: 8rem;
+    width: 50rem;
+    padding-right: 2rem;
+}
+
+.breakdown {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.finalbreakdown {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 40rem;
+}
+
+.total {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.finaltotal {
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    width: 40rem;
+}
+
+.twocolumns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0.5;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    padding-top: 16rem;
+    padding-bottom: 6rem;
+}
+
+#submitbutton {
+    display: none;
+}
+
+.confirmationpage {
+    background-color: #C9CDB0;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+    height: 100vh;
+    justify-content: center;
+}
+
+.confirmationpage h1,
+.userinfo>h1 {
+    font-size: 40px;
+}
+
+.confirmationpage h1 {
+    color: #000;
+}
+
+.confirmationpage>h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    width: 368px;
+    text-align: center;
+}
+
+.taxinfo {
+    color: #909090;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.bookingdetails {
+    align-items: center;
+    max-width: 40rem;
+    margin-right: -5rem;
+}
+
+.classdetails {
+    max-width: 18rem;
+    margin-left: -4rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+form p {
+    padding-bottom: 0.5rem;
+    margin-left: 1rem;
+    font-size: 14px;
+}
+
+.textInput {
+    width: 16rem;
+    padding: 1rem 1rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+}
+
+.bottomitems {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 3rem;
+}
+
+.formitem4,
+.formitem5 {
+    width: 6rem;
+}
+
+.peoplebutton {
+    width: 130px;
+    height: 43px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: space-between;
+}
+
+.peoplenumber {
+    font-size: 30px;
+    text-align: center;
+    padding: 2px 0;
+    line-height: normal;
+}
+
+.minus {
+    margin-top: 20px;
+    margin-left: 16px;
+}
+
+.plus {
+    margin-top: 12px;
+    margin-right: 16px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    border-radius: 20px;
+}
+
+.btn p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.btn1 {
+    width: 25rem;
+    background-color: #C9CDB0;
+}
+
+.btn2 {
+    width: 25rem;
+    background-color: #000;
+}
+
+.btn2 p {
+    color: #FFF;
+}
+
+.btn4 {
+    width: 15rem;
+    background-color: #000;
+    text-decoration: none;
+    padding: 0.5rem 0rem;
+    border-radius: 20px;
+}
+
+.btn4 p {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+    margin-left: -0.2rem;
+    margin-top: 0.4rem;
+}
+
+.btn3 {
+    background-color: #000;
+    text-decoration: none;
+    width: 14rem;
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+}
+
+.btn3 p {
+    font-size: 1.5rem;
+    color: #FFF;
+    text-align: center;
+    margin-left: -0.2rem;
+    margin-top: 0.4rem;
+}
+
+.closebtn {
+    margin-top: 0.5rem;
+    margin-left: -0.7rem;
+    margin-bottom: -3rem;
+    padding-bottom: 1rem;
+}
+
+#second_button {
+    display: none;
+}
+
+img.cartthumbnailmin {
+    width: 152px;
+    height: 152px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+#img1 {
+    object-position: 50% 80%;
+}
+
+.radiomethod:checked {
+    background-color: black;
+}
+
+.formbackground {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.formpopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    margin: 0 35rem;
+    z-index: 2;
+    width: 20rem;
+    background-color: #FFF;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter: drop-shadow(0 0 0.5rem #8e8e8e);
+}
+
+.formpopup h2 {
+    text-align: center;
+}
+
+.formcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.methodlabel {
+    width: 15rem;
+    height: 3.5rem;
+    border: 1px solid #555555;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.formcontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 1.2rem;
+    height: 15px;
+    width: 15px;
+    background-color: #FFF;
+    border-radius: 50%;
+    border: 1px solid #555555;
+}
+
+.methodlabel:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.methodlabel input:checked~.checkmark {
+    background-color: #000;
+}
+
+.formcontainer img {
+    scale: 12%;
+}
+
+.paymentlogo1 {
+    margin-left: -25rem;
+    margin-top: -9.75rem;
+}
+
+.paymentlogo2 {
+    margin-left: -19rem;
+    margin-top: -8.85rem;
+}
+
+.paymentlogo3 {
+    margin-left: -13rem;
+    margin-top: -6.65rem;
+}
+
+.paymentlogo4 {
+    margin-left: -24rem;
+    margin-top: -7.75rem;
 }
