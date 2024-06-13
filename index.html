@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="container">
+    <header class="container hide-on-small">
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
         <span class="title">Slow Clay Center</span>
         <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
@@ -44,10 +44,15 @@
             </ul>
           </nav>
     </header>
+    <header class="container hide-on-large">
+        <img src="assets/menuicon.png"  alt="menu" class="menu" onclick="window.location.href='shoppingcart.html'">
+        <span class="title">Slow Clay Center</span>
+        <img src="assets/carticon.png"  alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
+    </header>
     <main>
         <section>
             <img src="assets/header+2xblur.png" alt="Pottery Class Image" class="hide-on-small">
-            <img src="assets/home(mobile).png" alt="Pottery Class Image" class="mimg hide-on-large">
+            <img src="assets/mobile-homepage.png" alt="Pottery Class Image" class="mimg hide-on-large">
             <div class="imgtext">
                 <h1 class="ht">Slow down the pace and escape into a world of ceramics </h1>
             </div>
@@ -55,7 +60,7 @@
 
         <section>
             <h2 class="imgtext2">Explore Classes</h2>
-            <a href="#" class="btn schbtn">
+            <a href="#" class="hbtn schbtn">
                 <img class="sbtn" src="assets/searchicon.png">
                 <span class="sbtntxt">Search Classes</span>
             </a>
@@ -146,7 +151,9 @@
                 </div>
             </div>
         </section>
+
     </main>
+    
     <footer>
         <h3>Contact</h3>
         <h6>Phone: 399 437 844</h6>
