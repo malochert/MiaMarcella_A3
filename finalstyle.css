@@ -280,7 +280,7 @@ img{
     position: absolute;
     padding-left: 5%;
     display: flex;
-    top: 95%;
+    top: 100%;
 }
 
 @media screen and (max-width: 390px;){
@@ -452,7 +452,7 @@ nav li:hover ul{
         font-size: -1rem;
         position: absolute;
         display: flex;
-        top: 100%;
+        top: 105%;
         margin-left: 4%;
         margin-top: 2%;
         color: #000;
