@@ -111,6 +111,22 @@ h6{
     font-size: 12px;
 }
 
+p {
+    font-size: 0.75rem;
+    color: #555;
+    font-family: "Lexend", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.crimson-bold {
+    font-weight: 600;
+}
+
+
+
 
 .info{
     margin-left: 5%;
@@ -834,14 +850,11 @@ th {
     text-align: center;
 }
 
-/*
-main {
-    padding-top: 16rem;
-    padding-bottom: 6rem;
-} */
+
 
 .shoppingcart {
-    max-width: 100rem;
+    padding-top: 16rem;
+    padding-bottom: 6rem;
 }
 
 .blurred {
