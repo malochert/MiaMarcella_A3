@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container hide-on-small">
       <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
       <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
       <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
@@ -41,9 +41,15 @@
             </ul>
           </nav>
     </header>
+    <header class="container hide-on-large">
+      <img src="assets/menuicon.png"  alt="menu" class="menu" onclick="window.location.href='shoppingcart.html'">
+      <span class="title">Slow Clay Center</span>
+      <img src="assets/carticon.png"  alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
+    </header>
     <main>
         <section>
-            <img class="productimg" src="assets/wheeltasterheader(+blur).png" alt="Wheel Taster Image" >
+            <img class="productimg hide-on-small" src="assets/wheeltasterheader(+blur).png" alt="Wheel Taster Image" >
+            <img class="productimg hide-on-large" src="assets/mobileproduct1.png" alt="Wheel Taster Image" >
         </section>
         <section class="center">
             <h1 class="imgtitletext">Wheel Taster Class</h1>
@@ -62,7 +68,7 @@
                 <span class="h7">A wonderful intro to clay and you can choose to keep two pieces for us to glaze and fire to be collected a few weeks later, fully included in the fee. You’ll be surprised that most people can learn the basics of how to make quite respectable small pots even if they’ve never done it before!</span>
             </div>
             <div>
-                <img src="assets/C1thumbnail.png" alt="Pottery throwing Image" class="imgscale">
+                <img src="assets/C1thumbnail.png" alt="Pottery throwing Image" class="imgscale hide-on-small">
             </div>
         </section>
         <section class="center">
