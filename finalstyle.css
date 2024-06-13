@@ -254,19 +254,23 @@ img{
 }
 
 .imgtext2{
-        position: absolute;
-        padding-left: 5%;
-        display: flex;
-        top: 100%;
+    position: absolute;
+    padding-left: 5%;
+    display: flex;
+    top: 100%;
 }
 
-@media screen (max-width: 390px;){
-
+@media screen and (max-width: 390px;){
+    position: absolute;
+    padding-left: 5%;
+    display: flex;
+    top: 100%;
 }
 
 .imgtext3{
     margin-left: 5%;
-    margin-bottom: 1%
+    margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 .imgtitletext {
@@ -304,8 +308,9 @@ img{
 footer{
     padding: 0.1em;
     padding-left: 10em;
-    padding-bottom: 0.5em;
-    line-height: 0;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    line-height: 1.5;
     margin: 0%;
     background-color: rgba(150, 123, 109, 0.35);
 }
@@ -407,15 +412,16 @@ nav li:hover ul{
 
 .sbtn{
     width: 20px;
-    justify-content: top;
+    justify-content:  ddn;
     height: 20px;
     margin-right: 5px;
+    margin-top: 1%;
     object-fit: contain;
     align-self: top;
 }
 
 .sbtntxt{
-    padding: 10px 5px;
+    padding: 8px 4px;
 }
 
 .moreinfobtn{
@@ -514,7 +520,7 @@ nav li:hover ul{
     transform: none;
     width: 24px;
     height: 24px;
-    bottom: 21px;
+    bottom: 12px;
 }
 
 .shoppingbtn {
@@ -538,7 +544,7 @@ nav li:hover ul{
     width: 24px;
     height: 24px;
     margin-right: 5px;
-    bottom: 21px;
+    bottom: 12px;
 }
 
 
@@ -860,7 +866,7 @@ form p {
 .btn {
     text-decoration: none;
     padding: 1rem 3rem;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .btn p {
