@@ -71,11 +71,6 @@ h3{
     text-align: left;
 }
 
-/*h3{
-    font-size: 40px;
-    font-weight: bold;
-}*/
-
 h4{
     font-size: 36px;
 }
@@ -100,12 +95,6 @@ h6{
     margin-top: 0%;
     padding-top: 0%;
 }
-
-/*.h8{
-    font-family: lexend;
-    font-size: 14px;
-    font-weight: 700;
-}*/
 
 .h9{
     font-size: 12px;
@@ -962,30 +951,36 @@ img.cartthumbnail {
 
 .confirmationpage {
     background-color: #C9CDB0;
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+}
+
+.confirmation-content {
     display: flex;
-    gap: 3rem;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
-    height: 100vh;
+    column-gap: -1000%;
     justify-content: center;
 }
 
-.confirmationpage h1,
-.userinfo>h1 {
+.confirmation-content h1, .userinfo>h1 {
     font-size: 40px;
 }
 
-.confirmationpage h1 {
+.confirmation-content h1 {
     color: #000;
 }
 
-.confirmationpage>h2 {
+.confirmation-content h2 {
     font-size: 36px;
     font-weight: 400;
     color: #000;
-    width: 368px;
+    width: 25%;
     text-align: center;
+}
+
+.confirmation-content img {
+    scale: 30%;
 }
 
 .taxinfo {

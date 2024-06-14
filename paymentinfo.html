@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="finalstyle.css">
+    <script src="script.js"></script>
     <title>Payment Info</title>
 </head>
 
@@ -123,7 +124,7 @@
                         <input type="text" class="textInput formitem5" id="payment_expiry" name="expiry" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" required/>
                     </div>
                 </div>
-                <button href="#" class="btn3" id="first_button" type="submit" onsubmit="return secondButton()">
+                <button href="#" class="btn3" id="first_button" type="submit" onclick="secondButton()">
                     <p>Submit</p>
                 </button>
                 <a href="#" class="btn3" id="second_button" onclick="window.location.href='paymentconfirmation.html'">
