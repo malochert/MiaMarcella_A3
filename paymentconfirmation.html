@@ -10,40 +10,46 @@
 </head>
 
 <body>
-    <header class="container">
-        <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
-        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
-        <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
-          <nav>
+  header class="container hide-on-small">
+  <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+  <span class="title">Slow Clay Center</span>
+  <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+  <nav class="hide-on-small">
+      <ul>
+          <li>
+              Home
+          </li>
+          <li>
+              About
               <ul>
-                <li>
-                  Home
-                </li>
-                <li>
-                  About
-                  <ul>
-                      <li>News</li>
-                      <li>Blog</li>
-                      <li>FAQs</li>
-                      <li>Testimonials</li>
-                      <li>About Us</li>
-                  </ul>        
-                </li>
-                <li>
-                  Classes
-                </li>
-                <li>
-                  Events
-                </li>
-                <li>
-                  Products       
-                </li>
-                <li>
-                  Contacts
-                </li>
+                  <li>News</li>
+                  <li>Blog</li>
+                  <li>FAQs</li>
+                  <li>Testimonials</li>
+                  <li>About Us</li>
               </ul>
-            </nav>
-      </header>
+          </li>
+          <li>
+              Classes
+          </li>
+          <li>
+              Events
+          </li>
+          <li>
+              Products
+          </li>
+          <li>
+              Contacts
+          </li>
+      </ul>
+  </nav>
+</header>
+<header class="container hide-on-large">
+  <img src="assets/menuicon.png" alt="menu" class="menu" onclick="window.location.href='shoppingcart.html'">
+  <span class="title">Slow Clay Center</span>
+  <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
+      onclick="window.location.href='shoppingcart.html'">
+</header>
     <main class="confirmationpage">
         <div class="confirmation-content">
           <h1>Payment Confirmed</h1>
