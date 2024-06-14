@@ -262,11 +262,18 @@ img{
     color: black;
 }
 
+
 .center{
     text-align: center;
     align-content: center;
     align-items: center;
 }
+
+@media screen and (min-width: 390){
+    .center{
+        text-align: center;
+    }
+    }
 
 .imgscale{
     margin: 10%;
