@@ -952,15 +952,15 @@ img.cartthumbnail {
 .confirmationpage {
     background-color: #C9CDB0;
     padding-top: 16rem;
-    padding-bottom: 16rem;
+    padding-bottom: 10rem;
 }
 
 .confirmation-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    column-gap: -1000%;
-    justify-content: center;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 
 }
 
 .confirmation-content h1, .userinfo>h1 {
@@ -975,12 +975,13 @@ img.cartthumbnail {
     font-size: 36px;
     font-weight: 400;
     color: #000;
-    width: 25%;
     text-align: center;
+    margin: auto;
 }
 
 .confirmation-content img {
-    scale: 30%;
+    margin: auto;
+    width: 35%;
 }
 
 .taxinfo {
