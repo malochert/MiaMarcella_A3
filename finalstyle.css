@@ -1181,7 +1181,7 @@ img.cartthumbnailmin {
     transform: translateX(-50%);
     margin: auto;
     z-index: 2;
-    width: 20%;
+    width: 24%;
     background-color: #FFF;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
@@ -1234,27 +1234,24 @@ img.cartthumbnailmin {
     background-color: #000;
 }
 
-.formcontainer img {
-    scale: 11%;
-}
-
 .paymentlogo1 {
-    transform: translateX(-370%) translateY(-400%);
+    scale: 10%;
+    transform: translateX(-405%) translateY(-440%);
 }
 
 .paymentlogo2 {
-    margin-left: -19rem;
-    margin-top: -8.85rem;
+    scale: 9%;
+    transform: translateX(-450%) translateY(-495%);
 }
 
 .paymentlogo3 {
-    margin-left: -13rem;
-    margin-top: -6.65rem;
+    scale: 8%;
+    transform: translateX(-505%) translateY(-560%);
 }
 
 .paymentlogo4 {
-    margin-left: -24rem;
-    margin-top: -7.75rem;
+    scale: 10%;
+    transform: translateX(-405%) translateY(-430%);
 }
 
 
