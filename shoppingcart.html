@@ -13,7 +13,7 @@
 <body>
     <header class="container hide-on-small">
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
-        <span class="title">Slow Clay Center</span>
+        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
         <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
         <nav class="hide-on-small">
             <ul>
@@ -47,11 +47,11 @@
     </header>
     <header class="container hide-on-large">
         <img src="assets/menuicon.png" alt="menu" class="menu" onclick="window.location.href='shoppingcart.html'">
-        <span class="title">Slow Clay Center</span>
+        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
         <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
             onclick="window.location.href='shoppingcart.html'">
     </header>
-    <div class="formbackground hide-on-small" id="formbg" onclick="closeForm()"></div>
+    <div class="formbackground" id="formbg" onclick="closeForm()"></div>
     <main class="shoppingcart">
         <h1 class="pagetitle">Shopping Cart</h1>
         <div class="productlist hide-on-small">
@@ -134,7 +134,7 @@
                 </ul>
             </div>
         </div>
-        <div class="breakdown row hide-on-small">
+        <div class="breakdown row">
             <div>
                 <h5 class="crimson-bold">Subtotal:</h5>
                 <h5 class="taxinfo">Tax:</h5>
@@ -144,20 +144,23 @@
                     <h5 class="taxinfo">$0</h5>
             </div>
         </div>
-        <div class="total row hide-on-small">
-            <h5 class="crimson-bold">Total:</h5>
+        <div class="total row">
+            <h5 class="crimson-bold">Total: </h5>
             <h5>$1250</h5>
         </div>
-        <div class="buttons hide-on-small">
-            <a href="#" class="overall-btn btn1" onclick="window.location.href='index.html'">
-                <p>Continue Shopping</p>
-            </a>
-            <a href="#" class="overall-btn btn2 hide-on-small" onclick="openForm()">
-                <p>Payment Method</p>
-            </a>
+        <div class="hide-on-small">
+            <div class="buttons">
+                <a href="#" class="overall-btn btn1" onclick="window.location.href='index.html'">
+                    <p>Continue Shopping</p>
+                </a>
+                <a href="#" class="overall-btn btn2 hide-on-small" onclick="openForm()">
+                    <p>Payment Method</p>
+                </a>
+            </div>
         </div>
+        <img src="assets/downicon.png" alt="downarrow" id="down-icon" class="hide-on-large">
     </main>
-    <div class="formpopup hide-on-small" id="methodform">
+    <div class="formpopup" id="methodform">
         <form action="/action_page.php" class="formcontainer">
             <h5 class="selectpaymentmethod">Select payment <br> method:</h5>
             <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span
@@ -175,7 +178,7 @@
             <a href="#" class="btn4" onclick="window.location.href='paymentinfo.html'">
                 <p>Pay Now</p>
             </a>
-            <a href="#" class="closebtn" onclick="closeForm()">
+            <a href="#" class="closebtn hide-on-small" onclick="closeForm()">
                 <p>Close</p>
             </a>
         </form>
