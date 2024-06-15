@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    header class="container hide-on-small">
+    <header class="container hide-on-small">
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
         <span class="title">Slow Clay Center</span>
         <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
@@ -51,10 +51,10 @@
         <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
             onclick="window.location.href='shoppingcart.html'">
     </header>
-    <div class="formbackground" id="formbg" onclick="closeForm()"></div>
+    <div class="formbackground hide-on-small" id="formbg" onclick="closeForm()"></div>
     <main class="shoppingcart">
         <h1 class="pagetitle">Shopping Cart</h1>
-        <div class="productlist">
+        <div class="productlist hide-on-small">
             <div class="row">
                 <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
                 <ul class="classdetails">
@@ -104,7 +104,37 @@
                 <h5 class="price">$625</h5>
             </div>
         </div>
-        <div class="breakdown row">
+        <div class="productlist-m hide-on-large">
+            <div class="listing" id="listing1">
+                <img src="assets/beginners_transparent.png" alt="beginnerstransparent">
+                <ul class="classdetails-m">
+                    <li>
+                        <h6 class="crimson-bold">Beginners Wheel Pottery <br> Classes x1</h6>
+                    </li>
+                    <li>
+                        <h6 class="price-m">$625</h6>
+                    </li>
+                    <li>
+                        <p>Mon, 29 Apr 10:00AM - Mon, <br>24 Jun 12:00PM (AEST)</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="listing" id="listing2">
+                <img src="assets/wheeltaster_transparent.png" alt="wheeltastertransparent">
+                <ul class="classdetails-m">
+                    <li>
+                        <h6 class="crimson-bold">Wheel Taster Class x1</h6>
+                    </li>
+                    <li>
+                        <h6 class="price-m">$625</h6>
+                    </li>
+                    <li>
+                        <p>Mon, 29 Apr 10:00AM - Mon, <br>24 Jun 12:00PM (AEST)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="breakdown row hide-on-small">
             <div>
                 <h5 class="crimson-bold">Subtotal:</h5>
                 <h5 class="taxinfo">Tax:</h5>
@@ -114,20 +144,20 @@
                     <h5 class="taxinfo">$0</h5>
             </div>
         </div>
-        <div class="total row">
+        <div class="total row hide-on-small">
             <h5 class="crimson-bold">Total:</h5>
             <h5>$1250</h5>
         </div>
-        <div class="buttons">
+        <div class="buttons hide-on-small">
             <a href="#" class="overall-btn btn1" onclick="window.location.href='index.html'">
                 <p>Continue Shopping</p>
             </a>
-            <a href="#" class="overall-btn btn2" onclick="openForm()">
+            <a href="#" class="overall-btn btn2 hide-on-small" onclick="openForm()">
                 <p>Payment Method</p>
             </a>
         </div>
     </main>
-    <div class="formpopup" id="methodform">
+    <div class="formpopup hide-on-small" id="methodform">
         <form action="/action_page.php" class="formcontainer">
             <h5 class="selectpaymentmethod">Select payment <br> method:</h5>
             <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span

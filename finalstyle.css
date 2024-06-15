@@ -116,7 +116,10 @@ p {
 }
 
 
-
+.price-m {
+    font-size: 20px;
+    font-weight: 500;
+}
 
 .info{
     margin-left: 5%;
@@ -219,7 +222,7 @@ p {
     top: 0;
 }
 
-@media screen and (max-width: 390px;){
+@media screen and (max-width: 390px){
     .container{
         display: flex;
         flex-direction: column;
@@ -237,7 +240,7 @@ header > img {
     margin-top: 1px;
 }
 
-@media screen and (max-width: 390px;){
+@media screen and (max-width: 390px){
     header > img {
     color: #000;
     text-align: center;
@@ -1014,6 +1017,60 @@ img.cartthumbnail {
     width: 40rem;
 }
 
+.productlist-m {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.listing {
+    width: 350px;
+    height: 150px;
+    border-radius: 30px;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.listing ul {
+    margin-top: -10rem;
+    padding-left: 2rem;
+}
+
+.listing img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding-left: 14rem;
+    border-bottom-right-radius: 30px;
+}
+
+#listing1 {
+    background-image: url(assets/green_gradient_background.png);
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+#listing1 img {
+    padding-top: 1.5rem;
+}
+
+#listing2 {
+    background-image: url(assets/grey_gradient_background.png);
+    background-size: cover;
+    background-color: #cccccc;
+}
+
+#listing2 ul {
+    margin-top: -7.5rem;
+}
+
+.classdetails-m li{
+    margin-bottom: 0.25rem;
+}
+
 .twocolumns {
     display: flex;
     flex-direction: row;
@@ -1040,7 +1097,6 @@ img.cartthumbnail {
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
-    gap: 
 }
 
 .confirmation-content h1, .userinfo>h1 {
