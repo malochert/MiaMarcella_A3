@@ -534,12 +534,6 @@ nav li:hover ul{
     }
 }
 
-/*.btn {
-    text-decoration: none;
-    padding: 1rem 3rem;
-    border-radius: 20px;
-}*/
-
 .btn p {
     font-size: 1.5rem;
     text-align: center;
@@ -1221,6 +1215,10 @@ form p {
     margin-top: 0.4rem;
 }
 
+.extbtn {
+    width: 18rem;
+}
+
 .closebtn {
     margin-top: 0.5rem;
     margin-left: -0.7rem;
@@ -1258,15 +1256,14 @@ img.cartthumbnailmin {
 .formpopup {
     display: none;
     position: fixed;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-40%);
     margin: auto;
     z-index: 2;
     width: 24%;
     background-color: #FFF;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
     filter: drop-shadow(0 0 0.5rem #8e8e8e);
 }
 
