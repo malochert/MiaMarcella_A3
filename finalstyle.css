@@ -392,7 +392,7 @@ img {
         position: absolute;
         padding-left: 5%;
         display: flex;
-        top: 107%;
+        top: 100%;
     }
 }
 
@@ -400,6 +400,7 @@ img {
     margin-left: 5%;
     margin-bottom: 1%;
     margin-top: 1%;
+    transform: translateY(-700%);
 }
 
 .imgtitletext {
@@ -512,6 +513,7 @@ footer {
 }
 
 /* header*/
+
 
 nav {
     width: 100vw;
@@ -1345,12 +1347,13 @@ form p {
         width: 20rem;
         padding: 1rem 1rem;
         margin-left: 3%;
+        margin-bottom: 40%;
         border-radius: 30px;
         font-size: 0.9rem;
         background-color: #dfdfdf;
         font-family: "lexend";
         border: white;
-        transform: translateY(-40%);
+        transform: translateY(90%);
     }
 }
 
@@ -1661,11 +1664,11 @@ img.cartthumbnailmin {
 }
 
 
-.menu-title{
+.mtitle{
     font-family: "Crimson Text", Times, serif;
     font-size: 60px;
-    margin-bottom: 1%;
-    margin-top: 30%;
+    margin-bottom: 0%;
+    margin-top: 10%;
     padding-top: 0%;
     color: #555;
     text-align: center;
@@ -1687,4 +1690,8 @@ img.cartthumbnailmin {
 
 .menu-categories > li{
     padding-top: 23px;
+}
+
+.menu-container{
+    margin-top: 70px;
 }
