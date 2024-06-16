@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
+  <!-- Meta tags for character set, rendering mode, and responsive design -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="finalstyle.css">
-  <title>Payment Confirmation</title>
+  
+  <!-- Page title -->
+  <title>Mobile About Menu</title>
 </head>
-
 <body>
+    <!-- Header section for mobile (hidden on large screens) -->
     <header class="container hide-on-large">
-        <img src="assets/backicon.png"  alt="menu" class="menu" onclick="history.back()">
-        <span class="title">Slow Clay Center</span>
-        <img src="assets/carticon.png"  alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
+        <!-- Back icon with onclick event to navigate back (close the 'About' sub-menu) -->
+        <img src="assets/backicon.png" alt="back" class="menu" onclick="history.back()">
+        
+        <!-- Company logo, clickable to go to index.html -->
+        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        
+        <!-- Shopping cart icon with onclick event to go to shoppingcart.html -->
+        <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
     </header>
+    
     <section class="container menu-container">
-        <span class="mtitle">About</span>
+        <!-- Title for the section -->
+        <span class="m-title">About</span>
+        
+        <!-- Unordered list with subpages under 'About' -->
         <ul class="about-categories">
             <li>News</li>
             <li>Blog</li>
