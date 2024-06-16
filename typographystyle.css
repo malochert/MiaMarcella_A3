@@ -1,0 +1,85 @@
+/* Header Styles */
+h1 {
+    font-size: 64px;
+    color: #333030;
+    text-align: center;
+    font-family: "Crimson Text", Times, serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+h2, h3, h4, h5, h6, .h7, .h8, .h9 {
+    color: #555;
+    font-family: "Crimson Text", Times, serif;
+}
+
+h2 {
+    font-size: 54px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 40px;
+    color: #555;
+    font-family: "Crimson Text";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+h4 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 32px;
+}
+
+h6 {
+    font-size: 24px;
+}
+
+.h7 {
+    font-size: 16px;
+}
+
+.h8 {
+    font-family: lexend;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 1%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.h9 {
+    font-size: 12px;
+}
+
+/* Other text styles */
+p {
+    font-size: 0.75rem;
+    color: #555;
+    font-family: "Lexend", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Responsive mobile heading text */
+@media screen and (max-width: 390px) {
+    h1 {
+        font-size: 2.3rem;
+        color: #555;
+        text-align: center;
+        font-family: "Crimson Text", Times, serif;
+        font-style: normal;
+        font-weight: 600;
+    }
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+}
