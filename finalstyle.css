@@ -1693,5 +1693,20 @@ img.cartthumbnailmin {
 }
 
 .menu-container{
-    margin-top: 70px;
+    margin-top: 80px;
+}
+
+.about-categories{
+    color: #555;
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Crimson Text", Times, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-categories > li{
+    padding-top: 40px;
 }
