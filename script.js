@@ -1,13 +1,13 @@
 function openForm() {
-    document.getElementById("methodform").style.display = "block";
+    document.getElementById("method-form").style.display = "block";
     document.getElementById("formbg").style.display = "block";
-    document.querySelector(".shoppingcart").className = "blurred";
+    document.querySelector(".shopping-cart").className = "blurred";
 }
 
 function closeForm() {
-    document.getElementById("methodform").style.display = "none";
+    document.getElementById("method-form").style.display = "none";
     document.getElementById("formbg").style.display = "none";
-    document.querySelector(".blurred").className = "shoppingcart";
+    document.querySelector(".blurred").className = "shopping-cart";
 }
 
 function secondButton() {

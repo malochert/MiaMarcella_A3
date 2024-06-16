@@ -2,26 +2,36 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, rendering mode, and responsive design -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="finalstyle.css">
+
+    <!-- Link to external JavaScript file for script functionality -->
     <script src="script.js"></script>
+
+    <!-- Title of the page -->
     <title>Shopping Cart</title>
 </head>
 
 <body>
+    <!-- Header section for desktop (hidden on mobile/smaller screens) -->
     <header class="container hide-on-small">
+        <!-- Back button to previous page -->
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+        <!-- Company logo, clickable to go to index.html -->
         <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
         <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+
+        <!-- Horizontal navigation menu with various sections and nested list under About -->
         <nav class="hide-on-small">
             <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    About
+                <li>Home</li>
+                <li>About
                     <ul>
                         <li>News</li>
                         <li>Blog</li>
@@ -30,34 +40,37 @@
                         <li>About Us</li>
                     </ul>
                 </li>
-                <li>
-                    Classes
-                </li>
-                <li>
-                    Events
-                </li>
-                <li>
-                    Products
-                </li>
-                <li>
-                    Contacts
-                </li>
+                <li>Classes</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Contacts</li>
             </ul>
         </nav>
     </header>
+
+    <!-- Header section for mobile (hidden on desktop/larger screens) -->
     <header class="container hide-on-large">
+        <!-- 'Hamburger' menu icon for opening navigation menu -->
         <img src="assets/backicon.png" alt="menu" class="menu" onclick="history.back()">
+        <!-- Company logo, clickable to go to index.html -->
         <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
         <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
             onclick="window.location.href='shoppingcart.html'">
     </header>
-    <div class="formbackground" id="formbg" onclick="closeForm()"></div>
-    <main class="shoppingcart">
-        <h1 class="pagetitle">Shopping Cart</h1>
-        <div class="productlist hide-on-small">
+
+    <!-- Blurry background overlay for the payment method form popup (initially hidden) -->
+    <div class="form-background" id="formbg" onclick="closeForm()"></div>
+
+    <!-- Main content section for shopping cart -->
+    <main class="shopping-cart">
+        <h1>Shopping Cart</h1>
+        <!-- Product list section (styled for desktop and hidden on small screens) -->
+        <div class="product-list hide-on-small">
+            <!-- First product row with thumbnail, class details, quantity controls, and price -->
             <div class="row">
-                <img src="assets/beginnersheader.png" alt="beginnersheader" class="cartthumbnail">
-                <ul class="classdetails">
+                <img src="assets/beginnersheader.png" alt="beginnersheader" class="cart-thumbnail">
+                <ul class="class-details">
                     <li>
                         <h5 class="crimson-bold">Beginners Wheel Pottery Classes</h5>
                     </li>
@@ -65,12 +78,13 @@
                         <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun <br> 12:00PM (AEST)</p>
                     </li>
                 </ul>
-                <div class="peoplebutton">
+                <div class="people-button">
+                    <!-- SVG icons for quantity adjustment -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none"
                         class="minus">
                         <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round" />
                     </svg>
-                    <p class="peoplenumber" id="pn1"> 1 </p>
+                    <p class="people-number" id="pn1"> 1 </p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         class="plus">
                         <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round"
@@ -79,9 +93,11 @@
                 </div>
                 <h5 class="price">$625</h5>
             </div>
+
+            <!-- Second product row with thumbnail, class details, quantity controls, and price -->
             <div class="row">
-                <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cartthumbnail">
-                <ul class="classdetails">
+                <img src="assets/wheeltasterheader.png" alt="wheeltasterheader" class="cart-thumbnail">
+                <ul class="class-details">
                     <li>
                         <h5 class="crimson-bold">Wheel Taster Class</h5>
                     </li>
@@ -89,12 +105,13 @@
                         <p>Mon, 29 Apr 10:00AM - Mon, 24 Jun 12:00PM (AEST)</p>
                     </li>
                 </ul>
-                <div class="peoplebutton">
+                <div class="people-button">
+                    <!-- SVG icons for quantity adjustment -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="4" viewBox="0 0 20 4" fill="none"
                         class="minus">
                         <path d="M2 2H18" stroke="#555555" stroke-width="3" stroke-linecap="round" />
                     </svg>
-                    <p class="peoplenumber">1</p>
+                    <p class="people-number">1</p>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
                         class="plus">
                         <path d="M10 2V18M2 10.1404H18" stroke="#555555" stroke-width="3" stroke-linecap="round"
@@ -104,27 +121,32 @@
                 <h5 class="price">$625</h5>
             </div>
         </div>
-        <div class="productlist-m hide-on-large">
+
+        <!-- Product list section (styled for mobile and hidden on large screens) -->
+        <div class="product-list_m hide-on-large">
+            <!-- Listing for first product with abbreviated details -->
             <div class="listing" id="listing1">
-                <ul class="classdetails-m">
+                <ul class="class-details_m">
                     <li>
                         <h6 class="crimson-bold">Beginners Wheel Pottery <br> Classes x1</h6>
                     </li>
                     <li>
-                        <h6 class="price-m">$625</h6>
+                        <h6 class="price_m">$625</h6>
                     </li>
                     <li>
                         <p>Mon, 29 Apr 10:00AM - Mon, <br>24 Jun 12:00PM (AEST)</p>
                     </li>
                 </ul>
             </div>
+
+            <!-- Listing for second product with abbreviated details -->
             <div class="listing" id="listing2">
-                <ul class="classdetails-m">
+                <ul class="class-details_m">
                     <li>
                         <h6 class="crimson-bold">Wheel Taster Class x1</h6>
                     </li>
                     <li>
-                        <h6 class="price-m">$625</h6>
+                        <h6 class="price_m">$625</h6>
                     </li>
                     <li>
                         <p>Mon, 29 Apr 10:00AM - Mon, <br>24 Jun 12:00PM (AEST)</p>
@@ -132,58 +154,78 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Breakdown section for subtotal and tax -->
         <div class="breakdown row">
             <div>
                 <h5 class="crimson-bold">Subtotal:</h5>
-                <h5 class="taxinfo">Tax:</h5>
+                <h5 class="tax-info">Tax:</h5>
             </div>
             <div>
-                <h5>$1250</h2>
-                    <h5 class="taxinfo">$0</h5>
+                <h5>$1250</h5>
+                <h5 class="tax-info">$0</h5>
             </div>
         </div>
+
+        <!-- Total price -->
         <div class="total row">
             <h5 class="crimson-bold">Total: </h5>
             <h5>$1250</h5>
         </div>
+
+        <!-- Horizontal buttons section for actions (hidden on small screens) -->
         <div class="hide-on-small">
             <div class="buttons">
+                <!-- Button to continue shopping, linked to homepage-->
                 <a href="#" class="overall-btn btn1" onclick="window.location.href='index.html'">
                     <p>Continue Shopping</p>
                 </a>
+                <!-- Button to open payment method popup form -->
                 <a href="#" class="overall-btn btn2 hide-on-small" onclick="openForm()">
                     <p>Payment Method</p>
                 </a>
             </div>
         </div>
     </main>
-    <div class="animatedown">
+
+    <!-- Arrow icon for scrolling down (hidden on large screens) -->
+    <div class="animate-down">
         <img src="assets/downicon.png" alt="downarrow" id="down-icon" class="hide-on-large">
     </div>
-    <div class="formpopup formscrollin" id="methodform">
-        <form action="/action_page.php" class="formcontainer">
-            <h5 class="selectpaymentmethod">Select payment <br> method:</h5>
-            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="MasterCard"><span
-                    class="checkmark"></span><img src="assets/mastercardlogo.png" alt="mastercardlogo"
-                    class="paymentlogo1"></label>
-            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Visa"><span
+
+    <!-- Payment method form popup -->
+    <div class="form-popup form-scroll-in" id="method-form">
+        <form action="/action_page.php" class="form-container">
+            <h5 class="select-payment-method">Select payment <br> method:</h5>
+
+            <!-- Radio buttons for payment methods with associated logos -->
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radio-method"
+                    value="MasterCard"><span class="checkmark"></span><img src="assets/mastercardlogo.png"
+                    alt="mastercardlogo" class="paymentlogo1"></label>
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radio-method" value="Visa"><span
                     class="checkmark"></span><img src="assets/visalogo.png" alt="visalogo" class="paymentlogo2"></label>
-            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="Apple"><span
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radio-method" value="Apple"><span
                     class="checkmark"></span><img src="assets/applelogo.png" alt="applelogo"
                     class="paymentlogo3"></label>
-            <label class="methodlabel"><input type="radio" name="paymethod" class="radiomethod" value="PayPal"><span
+            <label class="methodlabel"><input type="radio" name="paymethod" class="radio-method" value="PayPal"><span
                     class="checkmark"></span><img src="assets/paypallogo.png" alt="paypallogo"
                     class="paymentlogo4"></label>
 
+            <!-- Button to proceed with payment, links to paymentinfo.html -->
             <a href="#" class="btn4" onclick="window.location.href='paymentinfo.html'">
                 <p>Pay Now</p>
             </a>
-            <a href="#" class="closebtn hide-on-small" onclick="closeForm()">
+
+            <!-- Close button to hide the popup (not applicable for mobile) -->
+            <a href="#" class="close-btn hide-on-small" onclick="closeForm()">
                 <p>Close</p>
             </a>
         </form>
     </div>
+
+    <!-- Footer section -->
     <footer>
+        <!-- Contact information -->
         <h3>Contact</h3>
         <h6>Phone: 399 437 844M</h6>
         <h6>Email: info@slowclay.com</h6>

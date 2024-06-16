@@ -2,65 +2,76 @@
 <html lang="en">
 
 <head>
+  <!-- Meta tags for character set, rendering mode, and responsive design -->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="finalstyle.css">
+
+  <!-- Title of the page -->
   <title>Payment Confirmation</title>
 </head>
 
 <body>
+  <!-- Header section for desktop (hidden on mobile/smaller screens) -->
   <header class="container hide-on-small">
+    <!-- Back button to previous page -->
     <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+    <!-- Company logo, clickable to go to index.html -->
     <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+    <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
     <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+
+    <!-- Horizontal navigation menu with various sections and nested list under About -->
     <nav class="hide-on-small">
-        <ul>
-            <li>
-                Home
-            </li>
-            <li>
-                About
-                <ul>
-                    <li>News</li>
-                    <li>Blog</li>
-                    <li>FAQs</li>
-                    <li>Testimonials</li>
-                    <li>About Us</li>
-                </ul>
-            </li>
-            <li>
-                Classes
-            </li>
-            <li>
-                Events
-            </li>
-            <li>
-                Products
-            </li>
-            <li>
-                Contacts
-            </li>
-        </ul>
+      <ul>
+        <li>Home</li>
+        <li>About
+          <ul>
+            <li>News</li>
+            <li>Blog</li>
+            <li>FAQs</li>
+            <li>Testimonials</li>
+            <li>About Us</li>
+          </ul>
+        </li>
+        <li>Classes</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Contacts</li>
+      </ul>
     </nav>
-</header>
-<header class="container hide-on-large">
+  </header>
+
+  <!-- Header section for mobile (hidden on desktop/larger screens) -->
+  <header class="container hide-on-large">
+    <!-- 'Hamburger' menu icon for opening navigation menu -->
     <img src="assets/backicon.png" alt="menu" class="menu" onclick="history.back()">
+    <!-- Company logo, clickable to go to index.html -->
     <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+    <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
     <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
-        onclick="window.location.href='shoppingcart.html'">
-</header>
-  <main class="confirmationpage">
+      onclick="window.location.href='shoppingcart.html'">
+  </header>
+
+  <!-- Main content section for payment confirmation -->
+  <main class="confirmation-page">
     <div class="confirmation-content">
       <h1>Payment Confirmed</h1>
-      <img src="assets/confirmationtick.png" alt="confirmationtick">
+      <!-- Tick image indicating successful payment -->
+      <img src="assets/confirmationtick.png" alt="confirmation tick">
       <h2>Looking forward to <br> seeing you in class!</h2>
     </div>
   </main>
+
+  <!-- Footer section -->
   <footer>
+    <!-- Contact information -->
     <h3>Contact</h3>
     <h6>Phone: 399 437 844M</h6>
-    <h6>Email:info@slowclay.com</h6>
+    <h6>Email: info@slowclay.com</h6>
   </footer>
 </body>
 

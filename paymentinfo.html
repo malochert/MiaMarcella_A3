@@ -2,27 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, rendering mode, and responsive design -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="finalstyle.css">
+
+    <!-- Link to external JavaScript file for script functionality -->
     <script src="script.js"></script>
-    <title>Payment Info</title>
+
+    <!-- Title of the page -->
+    <title>Payment Information</title>
 </head>
 
 
 <body>
+    <!-- Header section for desktop (hidden on mobile/smaller screens) -->
     <header class="container hide-on-small">
+        <!-- Back button to previous page -->
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+        <!-- Company logo, clickable to go to index.html -->
         <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
         <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+
+        <!-- Horizontal navigation menu with various sections and nested list under About -->
         <nav class="hide-on-small">
             <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    About
+                <li>Home</li>
+                <li>About
                     <ul>
                         <li>News</li>
                         <li>Blog</li>
@@ -31,33 +41,37 @@
                         <li>About Us</li>
                     </ul>
                 </li>
-                <li>
-                    Classes
-                </li>
-                <li>
-                    Events
-                </li>
-                <li>
-                    Products
-                </li>
-                <li>
-                    Contacts
-                </li>
+                <li>Classes</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Contacts</li>
             </ul>
         </nav>
     </header>
+
+    <!-- Header section for mobile (hidden on desktop/larger screens) -->
     <header class="container hide-on-large">
+        <!-- 'Hamburger' menu icon for opening navigation menu -->
         <img src="assets/backicon.png" alt="menu" class="menu" onclick="history.back()">
+        <!-- Company logo, clickable to go to index.html -->
         <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
         <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
             onclick="window.location.href='shoppingcart.html'">
     </header>
-    <main class="twocolumns">
-        <div class="bookingdetails hide-on-small">
-            <div class="finalproductlist">
+
+    <!-- Main content section with two-column layout -->
+    <main class="two-columns">
+
+        <!-- Section for booking details, formatted only for large screens -->
+        <div class="booking-details hide-on-small">
+            <!-- List of final products booked -->
+            <div class="final-product-list">
+                <!-- First product row with thumbnail, class details, and price -->
                 <div class="row">
-                    <img src="assets/beginnersthumbnail.png" alt="beginnersthumbnail" class="cartthumbnailmin" id="img1">
-                    <ul class="classdetails">
+                    <img src="assets/beginnersthumbnail.png" alt="beginnersthumbnail" class="cartthumbnailmin"
+                        id="img1">
+                    <ul class="class-details">
                         <li>
                             <h5 class="crimson-bold">Beginners Wheel Pottery Classes</h5>
                         </li>
@@ -67,9 +81,11 @@
                     </ul>
                     <h5 class="price">$625</h5>
                 </div>
+                <!-- Second product row with thumbnail, class details, and price -->
                 <div class="row">
-                    <img src="assets/wheeltasterthumbnail.png" alt="wheeltasterthumbnail" class="cartthumbnailmin" id="img2">
-                    <ul class="classdetails">
+                    <img src="assets/wheeltasterthumbnail.png" alt="wheeltasterthumbnail" class="cartthumbnailmin"
+                        id="img2">
+                    <ul class="class-details">
                         <li>
                             <h5 class="crimson-bold">Wheel Taster Class</h5>
                         </li>
@@ -80,66 +96,87 @@
                     <h5 class="price">$625</h5>
                 </div>
             </div>
-            <div class="finalbreakdown row">
+            <!-- Breakdown of subtotal and tax -->
+            <div class="final-breakdown row">
                 <div>
                     <h5 class="crimson-bold">Subtotal:</h5>
-                    <h5 class="taxinfo">Tax:</h5>
+                    <h5 class="tax-info">Tax:</h5>
                 </div>
                 <div>
                     <h5>$1250</h5>
-                    <h5 class="taxinfo">$0</h5>
+                    <h5 class="tax-info">$0</h5>
                 </div>
             </div>
-            <div class="finaltotal row">
+            <!-- Total price -->
+            <div class="final-total row">
                 <h5 class="crimson-bold">Total:</h5>
                 <h5>$1250</h5>
             </div>
         </div>
-        <div class="userinfo">
-            <h1 class="pagetitle">Payment <br> Information:</h1>
+
+        <!-- Section for user payment information -->
+        <div class="user-info">
+            <h1>Payment <br> Information:</h1>
+            <!-- Payment information form for user input -->
             <form>
-                <div class="formitem">
+                <!-- Form item for email address -->
+                <div class="form-item">
                     <label for="payment_email">
                         <p>Email Address</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_email" name="email" placeholder="Insert Email" required/>
+                    <input type="text" class="text-input" id="payment_email" name="email" placeholder="Insert Email"
+                        required />
                 </div>
-                <div class="formitem">
+                <!-- Form item for name on card -->
+                <div class="form-item">
                     <label for="payment_name">
                         <p>Name on Card</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_name" name="name" placeholder="Insert Name" required/>
+                    <input type="text" class="text-input" id="payment_name" name="name" placeholder="Insert Name"
+                        required />
                 </div>
-                <div class="formitem">
+                <!-- Form item for card number -->
+                <div class="form-item">
                     <label for="payment_cardno">
                         <p>Card Number</p>
                     </label>
-                    <input type="text" class="textInput" id="payment_cardno" name="cardno" placeholder="Insert Card Number" required/>
+                    <input type="text" class="text-input" id="payment_cardno" name="cardno"
+                        placeholder="Insert Card Number" required />
                 </div>
-                <div class="bottomitems">
-                    <div class="formitem">
+                <!-- Bottom items of CVV and expiry organised in a row -->
+                <div class="bottom-items">
+                    <!-- Form item for CVV -->
+                    <div class="form-item">
                         <label for="payment_cvv">
                             <p>CVV/CVC</p>
                         </label>
-                        <input type="text" class="textInput formitem4" id="payment_cvv" name="cvv" placeholder="CVV" required/>
+                        <input type="text" class="text-input form-item4" id="payment_cvv" name="cvv" placeholder="CVV"
+                            required />
                     </div>
-                    <div class="formitem">
+                    <!-- Form item for expiry date -->
+                    <div class="form-item">
                         <label for="payment_expiry">
                             <p>Expiry</p>
                         </label>
-                        <input type="text" class="textInput formitem5" id="payment_expiry" name="expiry" placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" required/>
+                        <input type="text" class="text-input form-item5" id="payment_expiry" name="expiry"
+                            placeholder="MM/YY" pattern="[0-9]{2}/[0-9]{2}" required />
                     </div>
                 </div>
+                <!-- Submit button for form -->
                 <button href="#" class="btn3 extbtn" id="first_button" type="submit" onclick="secondButton()">
                     <p>Submit</p>
                 </button>
+                <!-- Link button to proceed with payment -->
                 <a href="#" class="btn3" id="second_button" onclick="window.location.href='paymentconfirmation.html'">
                     <p>Pay Now</p>
                 </a>
             </form>
         </div>
     </main>
+
+    <!-- Footer section -->
     <footer>
+        <!-- Contact information -->
         <h3>Contact</h3>
         <h6>Phone: 399 437 844M</h6>
         <h6>Email: info@slowclay.com</h6>
