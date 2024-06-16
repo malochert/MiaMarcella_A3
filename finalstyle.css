@@ -1246,6 +1246,25 @@ img.cartthumbnail {
     width: 35%;
 }
 
+@media screen and (max-width: 390px) {
+    .userinfo {
+        margin:auto;
+        margin-top: -8rem;
+        margin-bottom: -6rem;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .confirmation-content {
+        margin:auto;
+        margin-top: -8rem;
+        margin-bottom: -6rem;
+    }
+    .confirmation-content h1{
+        width: 4rem;
+    }
+}
+
 .taxinfo {
     color: #909090;
     padding-top: 2rem;
