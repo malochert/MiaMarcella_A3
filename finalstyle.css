@@ -1220,8 +1220,10 @@ img.cartthumbnail {
 .confirmation-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 60vh;
     justify-content: space-between;
+    gap: 3rem;
+
 }
 
 .confirmation-content h1,
@@ -1238,12 +1240,12 @@ img.cartthumbnail {
     font-weight: 400;
     color: #000;
     text-align: center;
-    margin: auto;
 }
 
 .confirmation-content img {
     margin: auto;
-    width: 35%;
+    width: 30%;
+    transform: translateX(-0.5%);
 }
 
 @media screen and (max-width: 390px) {
@@ -1258,10 +1260,20 @@ img.cartthumbnail {
     .confirmation-content {
         margin:auto;
         margin-top: -8rem;
-        margin-bottom: -6rem;
+        margin-bottom: -3rem;
     }
     .confirmation-content h1{
-        width: 4rem;
+        text-align: center;
+        margin: 2rem;
+    }
+    .confirmation-content h2{
+        text-align: center;
+        margin: 5rem;
+        margin-top: 3rem;
+    }
+    .confirmation-content img {
+        scale: 200%;
+        transform: translateX(-1%);
     }
 }
 
