@@ -1,3 +1,4 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lexend:wght@100..900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
@@ -9,8 +10,8 @@ body {
     font-family: "Crimson Text, Lexend";
 }
 
+/* Header Styles */
 h1 {
-
     font-size: 64px;
     color: #333030;
     text-align: center;
@@ -19,39 +20,7 @@ h1 {
     font-weight: 700;
 }
 
-@media screen and (max-width: 390px) {
-    h1 {
-        font-size: 2.3rem;
-        color: #555;
-        text-align: center;
-        font-family: "Crimson Text", Times, serif;
-        font-style: normal;
-        font-weight: 600;
-    }
-}
-
-.ht {
-    margin-left: 5%;
-    margin-right: 5%;
-    padding-bottom: 9%;
-}
-
-@media screen and (max-width: 390px) {
-    .ht {
-        margin: 1%;
-        margin-bottom: 110%;
-        color: 555555;
-    }
-}
-
-h2,
-h3,
-h4,
-h5,
-h6,
-.h7,
-.h8,
-.h9 {
+h2, h3, h4, h5, h6, .h7, .h8, .h9 {
     color: #555;
     font-family: "Crimson Text", Times, serif;
 }
@@ -59,14 +28,6 @@ h6,
 h2 {
     font-size: 54px;
     margin: 0;
-}
-
-@media screen and (max-width: 400px) {
-    h2 {
-        font-size: 2rem;
-        font-weight: 600;
-        margin: 0;
-    }
 }
 
 h3 {
@@ -108,6 +69,7 @@ h6 {
     font-size: 12px;
 }
 
+/* Other text styles */
 p {
     font-size: 0.75rem;
     color: #555;
@@ -117,11 +79,43 @@ p {
     line-height: normal;
 }
 
-
 .crimson-bold {
+    /* Increased font weight */
     font-weight: 600;
 }
 
+/* Responsive mobile header text */
+@media screen and (max-width: 390px) {
+    h1 {
+        font-size: 2.3rem;
+        color: #555;
+        text-align: center;
+        font-family: "Crimson Text", Times, serif;
+        font-style: normal;
+        font-weight: 600;
+    }
+}
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 0;
+    }
+}
+
+.ht {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 9%;
+}
+
+@media screen and (max-width: 390px) {
+    .ht {
+        margin: 1%;
+        margin-bottom: 110%;
+        color: 555555;
+    }
+}
 
 .price_m {
     font-size: 20px;
@@ -168,38 +162,6 @@ p {
     }
 }
 
-.title {
-    color: #000;
-    text-align: center;
-    justify-content: center;
-    font-family: "Crimson Text";
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 90px;
-    background-color: #fff
-}
-
-@media screen and (max-width: 390px) {
-    .title {
-        margin-top: 2%;
-        color: #000;
-        text-align: center;
-        justify-content: center;
-        font-family: "Crimson Text";
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-    }
-}
-
-.back {
-    position: relative;
-    width: 2.5%;
-    transform: translateX(-28rem) translateY(0.5rem);
-    margin-top: 10px;
-}
-
 .prices {
     margin-top: 1.5%;
     text-align: center;
@@ -244,28 +206,6 @@ p {
 }
 
 
-
-.container {
-    display: flexbox;
-    text-align: center;
-    padding: auto;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    background-color: white;
-    top: 0;
-}
-
-@media screen and (max-width: 390px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: auto;
-        width: 100vw;
-        background-color: white;
-    }
-}
 
 header>img {
     position: relative;
@@ -488,83 +428,9 @@ img {
     transform: translateY(7rem);
 }
 
-footer {
-    width: 100;
-    padding: 0.1em;
-    padding-left: 10em;
-    padding-bottom: 3%;
-    padding-top: 2%;
-    line-height: 1.5;
-    margin: 0%;
-    background-color: rgba(150, 123, 109, 0.35);
-}
 
-@media screen and (max-width: 390px) {
-    footer {
-        width: 100;
-        padding: 0.1em;
-        padding-left: 2em;
-        padding-bottom: 4%;
-        padding-top: 2%;
-        line-height: 1.5;
-        margin: 0%;
-        background-color: rgba(150, 123, 109, 0.35);
-    }
-}
 
 /* header*/
-
-
-nav {
-    width: 100vw;
-    margin: 0;
-}
-
-ol,
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-nav>ul {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    /*changing the nav bar width*/
-}
-
-
-nav li {
-    font-size: 24px;
-    padding: 0.5em 1em;
-    width: 100%;
-    color: #555;
-    font-family: "Crimson Text", Times, serif;
-    font-style: normal;
-    line-height: 34px;
-    background-color: #E8E8E8;
-    transform: translateX(-0.3em);
-    margin: 0;
-}
-
-nav ul ul {
-    transform: scale(1, 0);
-    transform-origin: top right;
-    position: fixed;
-    top: 100%;
-    transition: 0.3s;
-    justify-content: center;
-    width: 80%;
-    left: 5px;
-
-}
-
-nav li:hover ul {
-    transform: scale(1, 1);
-    transition: 0.3s;
-}
 
 
 .hbtn {
@@ -1255,42 +1121,11 @@ img.cart-thumbnail {
     display: none;
 }
 
-.confirmation-page {
-    background-color: #C9CDB0;
-    padding-top: 16rem;
-    padding-bottom: 10rem;
-}
-
-.confirmation-content {
-    display: flex;
-    flex-direction: column;
-    height: 60vh;
-    justify-content: space-between;
-    gap: 3rem;
-
-}
-
-.confirmation-content h1,
 .user-info>h1 {
     font-size: 40px;
 }
 
-.confirmation-content h1 {
-    color: #000;
-}
 
-.confirmation-content h2 {
-    font-size: 36px;
-    font-weight: 400;
-    color: #000;
-    text-align: center;
-}
-
-.confirmation-content img {
-    margin: auto;
-    width: 30%;
-    transform: translateX(-0.5%);
-}
 
 @media screen and (max-width: 390px) {
     .user-info {
@@ -1300,29 +1135,7 @@ img.cart-thumbnail {
     }
 }
 
-@media screen and (max-width: 390px) {
-    .confirmation-content {
-        margin: auto;
-        margin-top: -8rem;
-        margin-bottom: -3rem;
-    }
 
-    .confirmation-content h1 {
-        text-align: center;
-        margin: 2rem;
-    }
-
-    .confirmation-content h2 {
-        text-align: center;
-        margin: 5rem;
-        margin-top: 3rem;
-    }
-
-    .confirmation-content img {
-        scale: 200%;
-        transform: translateX(-1%);
-    }
-}
 
 .tax-info {
     color: #909090;
@@ -1670,48 +1483,11 @@ img.cartthumbnailmin {
     }
 }
 
-.hide-on-small {
-    display: block;
-}
 
-.hide-on-large {
-    display: block;
-}
-
-/* Hide elements on small screens */
-@media (max-width: 390px) {
-    .hide-on-small {
-        display: none;
-    }
-}
-
-/* Hide elements on large screens */
-@media (min-width: 391px) {
-    .hide-on-large {
-        display: none;
-    }
-}
 
 .m-img {
     width: 100%;
 }
-
-/*mobile menu on homepage*/
-
-.menu {
-    position: relative;
-    width: 6%;
-    transform: translateX(-300%) translateY(10%);
-    margin-top: 10px;
-}
-
-.shoppingicon {
-    position: relative;
-    width: 7%;
-    transform: translateX(200%) translateY(20%);
-    margin-top: 10px;
-}
-
 
 .m-title {
     font-family: "Crimson Text", Times, serif;
@@ -1758,4 +1534,232 @@ img.cartthumbnailmin {
 
 .about-categories>li {
     padding-top: 40px;
+}
+
+
+/* General header style classes */
+.back {
+    position: relative;
+    width: 2.5%;
+    transform: translateX(-28rem) translateY(0.5rem);
+    margin-top: 10px;
+}
+
+.shoppingicon {
+    position: relative;
+    width: 7%;
+    transform: translateX(200%) translateY(20%);
+    margin-top: 10px;
+}
+
+/* Desktop header style classes */
+.container {
+    display: flexbox;
+    text-align: center;
+    padding: auto;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+    top: 0;
+}
+
+.title {
+    color: #000;
+    text-align: center;
+    justify-content: center;
+    font-family: "Crimson Text";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 90px;
+    background-color: #fff
+}
+
+/* Desktop navigation menu */
+nav {
+    width: 100vw;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    /*changing the nav bar width*/
+}
+
+
+nav li {
+    font-size: 24px;
+    padding: 0.5em 1em;
+    width: 100%;
+    color: #555;
+    font-family: "Crimson Text", Times, serif;
+    font-style: normal;
+    line-height: 34px;
+    background-color: #E8E8E8;
+    transform: translateX(-0.3em);
+    margin: 0;
+}
+
+nav ul ul {
+    transform: scale(1, 0);
+    transform-origin: top right;
+    position: fixed;
+    top: 100%;
+    transition: 0.3s;
+    justify-content: center;
+    width: 80%;
+    left: 5px;
+
+}
+
+nav li:hover ul {
+    transform: scale(1, 1);
+    transition: 0.3s;
+}
+
+/* Mobile header style classes */
+@media screen and (max-width: 390px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: auto;
+        width: 100vw;
+        background-color: white;
+    }
+    .title {
+        margin-top: 2%;
+        color: #000;
+        text-align: center;
+        justify-content: center;
+        font-family: "Crimson Text";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
+
+.menu {
+    position: relative;
+    width: 6%;
+    transform: translateX(-300%) translateY(10%);
+    margin-top: 10px;
+}
+
+/* confirmationpage.html style classes */
+.confirmation-page {
+    background-color: #C9CDB0;
+    padding-top: 16rem;
+    padding-bottom: 10rem;
+}
+
+.confirmation-content {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.confirmation-content h1 {
+    font-size: 40px;
+    color: #000;
+}
+
+.confirmation-content h2 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+
+.confirmation-content img {
+    margin: auto;
+    width: 30%;
+    transform: translateX(-0.5%);
+}
+
+/* Mobile confirmationpage.html style classes */
+@media screen and (max-width: 390px) {
+    .confirmation-content {
+        margin: auto;
+        margin-top: -8rem;
+        margin-bottom: -3rem;
+    }
+
+    .confirmation-content h1 {
+        text-align: center;
+        margin: 2rem;
+    }
+
+    .confirmation-content h2 {
+        text-align: center;
+        margin: 5rem;
+        margin-top: 3rem;
+    }
+
+    .confirmation-content img {
+        scale: 200%;
+        transform: translateX(-1%);
+    }
+}
+
+
+/* Desktop footer style */
+footer {
+    width: 100;
+    padding: 0.1em;
+    padding-left: 10em;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    line-height: 1.5;
+    margin: 0%;
+    background-color: rgba(150, 123, 109, 0.35);
+}
+
+/* Mobile footer style */
+@media screen and (max-width: 390px) {
+    footer {
+        width: 100;
+        padding: 0.1em;
+        padding-left: 2em;
+        padding-bottom: 4%;
+        padding-top: 2%;
+        line-height: 1.5;
+        margin: 0%;
+        background-color: rgba(150, 123, 109, 0.35);
+    }
+}
+
+/* Umbrella responsive design classes */
+.hide-on-small {
+    display: block;
+}
+.hide-on-large {
+    display: block;
+}
+
+/* Hide elements on small screens */
+@media (max-width: 390px) {
+    .hide-on-small {
+        display: none;
+    }
+}
+
+/* Hide elements on large screens */
+@media (min-width: 391px) {
+    .hide-on-large {
+        display: none;
+    }
 }
