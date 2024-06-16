@@ -13,7 +13,6 @@ function closeForm() {
 function secondButton() {
     document.getElementById("first_button").style.display = "none";
     document.getElementById("second_button").style.display = "block";
-    return true;
 }
 
 function toggleIcon(self) {
