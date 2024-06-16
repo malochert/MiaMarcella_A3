@@ -30,7 +30,7 @@
         <!-- Horizontal navigation menu with various sections and nested list under About -->
         <nav class="hide-on-small">
             <ul>
-                <li>Home</li>
+                <li onclick="window.location.href='index.html'">Home</li>
                 <li>About
                     <ul>
                         <li>News</li>
@@ -49,15 +49,14 @@
     </header>
 
     <!-- Header section for mobile (hidden on desktop/larger screens) -->
-    <header class="container hide-on-large">
-        <!-- 'Hamburger' menu icon for opening navigation menu -->
-        <img src="assets/backicon.png" alt="menu" class="menu" onclick="history.back()">
-        <!-- Company logo, clickable to go to index.html -->
-        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
-        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
-        <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
-            onclick="window.location.href='shoppingcart.html'">
-    </header>
+  <header class="container hide-on-large">
+    <!-- Back button to previous page -->
+    <img src="assets/backicon.png" alt="back icon" class="menu" onclick="history.back()">
+    <!-- Company logo, clickable to go to index.html -->
+    <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+    <!-- Hamburger Menu icon with onclick event to navigate to menu.html -->
+    <img src="assets/menuicon.png" alt="menu" class="shoppingicon" onclick="window.location.href='menu.html'">
+  </header>
 
     <!-- Blurry background overlay for the payment method form popup (initially hidden) -->
     <div class="form-background" id="formbg" onclick="closeForm()"></div>

@@ -1,312 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="finalstyle.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+  <!-- Meta tags for character set, rendering mode, and responsive design -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="finalstyle.css">
+
+  <!-- Link to external JavaScript file for script functionality -->
+  <script src="script.js"></script>
+
+  <!-- Title of the page -->
+  <title>Beginners Wheel Pottery Classes</title>
 </head>
+
 <body>
-    <header class="container hide-on-small">
-      <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
-      <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
-      <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
-        <nav>
-            <ul>
-              <li>
-                Home
-              </li>
-              <li>
-                About
-                <ul>
-                    <li>News</li>
-                    <li>Blog</li>
-                    <li>FAQs</li>
-                    <li>Testimonials</li>
-                    <li>About Us</li>
-                </ul>        
-              </li>
-              <li>
-                Classes
-              </li>
-              <li>
-                Events
-              </li>
-              <li>
-                Products       
-              </li>
-              <li>
-                Contacts
-              </li>
-            </ul>
-          </nav>
-    </header>
-    <header class="container hide-on-large">
-      <img src="assets/backicon.png"  alt="menu" class="menu" onclick="history.back()">
-      <span class="title">Slow Clay Center</span>
-      <img src="assets/carticon.png"  alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
-    </header>
+  <!-- Header section for desktop (hidden on mobile/smaller screens) -->
+  <header class="container hide-on-small">
+    <!-- Back button to previous page -->
+    <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+    <!-- Company logo, clickable to go to index.html -->
+    <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+    <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
+    <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+
+    <!-- Horizontal navigation menu with various sections and nested list under About -->
+    <nav class="hide-on-small">
+      <ul>
+        <li onclick="window.location.href='index.html'">Home</li>
+        <li>About
+          <ul>
+            <li>News</li>
+            <li>Blog</li>
+            <li>FAQs</li>
+            <li>Testimonials</li>
+            <li>About Us</li>
+          </ul>
+        </li>
+        <li>Classes</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Contacts</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Header section for mobile (hidden on desktop/larger screens) -->
+  <header class="container hide-on-large">
+    <!-- Back button to previous page -->
+    <img src="assets/backicon.png" alt="back icon" class="menu" onclick="history.back()">
+    <!-- Company logo, clickable to go to index.html -->
+    <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+    <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
+    <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
+  </header>
+
+  <main>
+    <!-- Class header image (responsive) -->
     <section>
-      <img class="productimg2 hide-on-small" src="assets/Beginners-header-photo.png" alt="Wheel Taster Image" >
-      <img class="productimg2 hide-on-large" src="assets/BW-Mobile.png" alt="Wheel Taster Image" >
+      <img class="product-img-2 hide-on-small" src="assets/Beginners-header-photo.png" alt="Wheel Taster Image">
+      <img class="product-img-2 hide-on-large" src="assets/BW-Mobile.png" alt="Wheel Taster Image">
     </section>
+
+    <!-- Class title and price -->
     <section class="prices">
-        <h1 class="imgtitletext2">Beginners Wheel Pottery Classes</h1>
-        <h5>PRICE</h5>
-        <h6>$135 Normal</h6>
-        <h6>$95 Concession<h6>
+      <h1 class="img-title-text-2">Beginners Wheel Pottery Classes</h1>
+      <h5>PRICE</h5>
+      <h6>$135 Normal</h6>
+      <h6>$95 Concession<h6>
     </section>
+
+    <!-- Class details section -->
     <section>
       <div class="column3">
         <h5>About</h5>
-        <span class="h7">Join our popular 8-week Beginner’s wheel course at Slow Clay! Explore ceramics from clay preparation to glazing, blending Japanese-inspired techniques with ergonomic safety. Move from structured learning to personalized exploration, and take home your fired creations. </span>
+        <span class="h7">Join our popular 8-week Beginner’s wheel course at Slow Clay! Explore ceramics from clay
+          preparation to glazing, blending Japanese-inspired techniques with ergonomic safety. Move from structured
+          learning to personalized exploration, and take home your fired creations. </span>
         <h5>What’s Included?</h5>
-        <span class="h7">The course fee at our studio covers everything you need, including all materials such as unlimited soft Midfire clay, glazes, and access to studio equipment and select tools. If you choose to have your pieces fired, there's an optional fee of $15 per kilogram, payable at the end of the term when you collect your fired work.</span>
-    </div>
-    <div>
-        <img src="assets/C2thumbnail.png" alt="Pottery throwing Image" class="imgscale2 hide-on-small">
-    </div>
-          </section>
-          <section class="center">
-              <h3 class="class">Class Dates</h3>
-              <h6>Every second friday</h6>
-            <table class="calendar bottomRounded">
-              <caption class="caption">May 2024</caption>
-              <thead>
-                <tr class="weekdays">
-                  <th>Sun</th>
-                  <th>Mon</th>
-                  <th>Tue</th>
-                  <th>Wed</th>
-                  <th>Thu</th>
-                  <th>Fri</th>
-                  <th>Sat</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="previousDays">29</td>
-                  <td class="previousDays">30</td>
-                  <td>1</td>
-                  <td>2</td>
-                  <td>3</td>
-                  <td class="emphasise">4</td>
-                  <td>5</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td>7</td>
-                  <td>8</td>
-                  <td>9</td>
-                  <td>10</td>
-                  <td>11</td>
-                  <td>12</td>
-                </tr>
-                <tr>
-                  <td>13</td>
-                  <td>14</td>
-                  <td>15</td>
-                  <td>16</td>
-                  <td>17</td>
-                  <td class="emphasise">18</td>
-                  <td>19</td>
-                </tr>
-                <tr>
-                  <td>20</td>
-                  <td>21</td>
-                  <td>22</td>
-                  <td>23</td>
-                  <td>24</td>
-                  <td>25</td>
-                  <td>26</td>
-                </tr>
-                <tr>
-                  <td>27</td>
-                  <td>28</td>
-                  <td>29</td>
-                  <td>30</td>
-                  <td>31</td>
-                  <td class="nextMonthDays emphasise">1</td>
-                  <td class="nextMonthDays">2</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
-        </div>
-        <section>
-            <h3 class="infotitle">Important Info</h3>
-            <ul class="info">
-              <li>Please read our T&Cs during the booking process.</li>
-              <li>After choosing a date please double-check your details and date is correct!
-                Bookings are a commitment to attend. If you are ill or cannot attend we can occasionally transfer you to another date but only if we can find a replacement for you. There is a $25 per person transfer fee.</li>
-              <li>NEW: Refund insurance is now available at the checkout for an extra 10%. We strongly recommend it as we do not give refunds under any circumstances. We encourage you to sign up to our newsletter and add us to your email contact list for all updates.</li>
-            </ul>
-            <button class="cartbtn" id="first_button" type="submit" onclick="secondButton()">
-              <h5>ADD TO CART</h5>
-            </button>
-            <button class="cartbtn2" id="second_button" onclick="firstButton()">
-              <h5 class="cart-btn-2-text">ADDED TO CART</h5>
-            </button>
-        </section>
-    </main>
-    <footer>
-      <h3>Contact</h3>
-      <h6>Phone: 399 437 844</h6>
-      <h6>Email: info@slowclay.com</h6>
-  </footer>
-</body>
-</html>
+        <span class="h7">The course fee at our studio covers everything you need, including all materials such as
+          unlimited soft Midfire clay, glazes, and access to studio equipment and select tools. If you choose to have
+          your pieces fired, there's an optional fee of $15 per kilogram, payable at the end of the term when you
+          collect your fired work.</span>
+      </div>
+      <div>
+        <img src="assets/C2thumbnail.png" alt="Pottery throwing Image" class="img-scale hide-on-small">
+      </div>
+    </section>
 
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="finalstyle.css">
-    <title>Document</title>
-</head>
-<body>
-    <header class="container">
-      <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
-      <span class="title">Slow Clay Center</span>
-      <img src="assets/carticon.png"  alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
-        <nav>
-            <ul>
-              <li>
-                Home
-              </li>
-              <li>
-                About
-                <ul>
-                    <li>News</li>
-                    <li>Blog</li>
-                    <li>FAQs</li>
-                    <li>Testimonials</li>
-                    <li>About Us</li>
-                </ul>        
-              </li>
-              <li>
-                Classes
-              </li>
-              <li>
-                Events
-              </li>
-              <li>
-                Products       
-              </li>
-              <li>
-                Contacts
-              </li>
-            </ul>
-          </nav>
-    </header>
-    <main>
-        <section>
-            <img class="productimg2" src="assets/beginnersheader(+blur).png" alt="Wheel Taster Image" >
-        </section>
-        <section class="center">
-            <h1 class="imgtitletext2">Beginners Wheel Pottery Classes</h1>
-            <h5>PRICE</h5>
-            <h6>$135 Normal</h6>
-            <h6>$95 Concession<h6>
-        </section>
-        <section>
-            <div class="column3">
-                <h5>About</h5>
-                <span class="h7">Join our popular 8-week Beginner’s wheel course at Slow Clay! Explore ceramics from clay preparation to glazing, blending Japanese-inspired techniques with ergonomic safety. Move from structured learning to personalized exploration, and take home your fired creations. </span>
-                <h5>What’s Included?</h5>
-                <span class="h7">The course fee at our studio covers everything you need, including all materials such as unlimited soft Midfire clay, glazes, and access to studio equipment and select tools. If you choose to have your pieces fired, there's an optional fee of $15 per kilogram, payable at the end of the term when you collect your fired work.</span>
-            </div>
-            <div>
-                <img src="assets/C2thumbnail.png" alt="Pottery throwing Image" class="imgscale2">
-            </div>
-        </section>
-        <section class="center">
-            <h3 class="class2">Class Dates</h3>
-            <h6>Every second friday</h6>
-          <table class="calendar bottomRounded">
-            <caption class="caption">May 2024</caption>
-            <thead>
-              <tr class="weekdays">
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="previousDays">29</td>
-                <td class="previousDays">30</td>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td class="emphasise">4</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <td>6</td>
-                <td>7</td>
-                <td>8</td>
-                <td>9</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-              </tr>
-              <tr>
-                <td>13</td>
-                <td>14</td>
-                <td>15</td>
-                <td>16</td>
-                <td>17</td>
-                <td class="emphasise">18</td>
-                <td>19</td>
-              </tr>
-              <tr>
-                <td>20</td>
-                <td>21</td>
-                <td>22</td>
-                <td>23</td>
-                <td>24</td>
-                <td>25</td>
-                <td>26</td>
-              </tr>
-              <tr>
-                <td>27</td>
-                <td>28</td>
-                <td>29</td>
-                <td>30</td>
-                <td>31</td>
-                <td class="nextMonthDays emphasise">1</td>
-                <td class="nextMonthDays">2</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-        <section>
-            <h3 class="infotitle">Important Info</h3>
-            <ul class="info">
-              <li>Please read our T&Cs during the booking process.</li>
-              <li>After choosing a date please double-check your details and date is correct!
-                Bookings are a commitment to attend. If you are ill or cannot attend we can occasionally transfer you to another date but only if we can find a replacement for you. There is a $25 per person transfer fee.</li>
-            </ul>
-            <ul class="info">
-              <li>NEW: Refund insurance is now available at the checkout for an extra 10%. We strongly recommend it as we do not give refunds under any circumstances. We encourage you to sign up to our newsletter and add us to your email contact list for all updates.</li>
-            </ul>
-            <button class="cartbtn">
-              <h5 class="centercartbtn">Add to Cart</h5>
-            </button>
-        </section>
-    </main>
-    <footer>
-      <h3>Contact</h3>
-      <h6>Phone: 399 437 844</h6>
-      <h6>Email: info@slowclay.com</h6>
+    <!-- Class dates -->
+    <section class="center">
+      <h3 class="class">Class Dates</h3>
+      <h6>Every second friday</h6>
+      <!-- Calendar -->
+      <table class="calendar bottom-rounded">
+        <caption class="caption">May 2024</caption>
+        <thead>
+          <tr class="weekdays">
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="previous-days">29</td>
+            <td class="previous-days">30</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="emphasise">4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td class="emphasise">18</td>
+            <td>19</td>
+          </tr>
+          <tr>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+          </tr>
+          <tr>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+            <td class="next-month-days emphasise">1</td>
+            <td class="next-month-days">2</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Information section -->
+    <section>
+      <h3 class="info-title">Important Info</h3>
+      <ul class="info">
+        <li>Please read our T&Cs during the booking process.</li>
+        <li>After choosing a date please double-check your details and date is correct!
+          Bookings are a commitment to attend. If you are ill or cannot attend we can occasionally transfer you to
+          another date but only if we can find a replacement for you. There is a $25 per person transfer fee.</li>
+        <li>NEW: Refund insurance is now available at the checkout for an extra 10%. We strongly recommend it as we do
+          not give refunds under any circumstances. We encourage you to sign up to our newsletter and add us to your
+          email contact list for all updates.</li>
+      </ul>
+      <!-- Button to add to cart -->
+      <button class="cartbtn" id="first_button" type="submit" onclick="secondButton()">
+        <h5>ADD TO CART</h5>
+      </button>
+      <button class="cartbtn2" id="second_button" onclick="firstButton()">
+        <h5 class="cart-btn-2-text">ADDED TO CART</h5>
+      </button>
+    </section>
+  </main>
+  
+  <!-- Footer section -->
+  <footer>
+    <!-- Contact information -->
+    <h3>Contact</h3>
+    <h6>Phone: 399 437 844</h6>
+    <h6>Email: info@slowclay.com</h6>
   </footer>
 </body>
-</html> -->
+
+</html>

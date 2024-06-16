@@ -2,26 +2,36 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags for character set, rendering mode, and responsive design -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external CSS file for styling -->
     <link rel="stylesheet" href="finalstyle.css">
+
+    <!-- Link to external JavaScript file for functionality -->
     <script src="script.js"></script>
+
+    <!-- Page title -->
     <title>Home</title>
 </head>
 
 <body>
+    <!-- Header section for desktop (hidden on mobile/smaller screens) -->
     <header class="container hide-on-small">
+        <!-- Back button to previous page -->
         <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
-        <span class="title">Slow Clay Center</span>
+        <!-- Company logo, clickable to go to index.html -->
+        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
         <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+
+        <!-- Horizontal navigation menu with various sections and nested list under About -->
         <nav class="hide-on-small">
             <ul>
-                <li>
-                    Home
-                </li>
-                <li>
-                    About
+                <li onclick="window.location.href='index.html'">Home</li>
+                <li>About
                     <ul>
                         <li>News</li>
                         <li>Blog</li>
@@ -30,138 +40,165 @@
                         <li>About Us</li>
                     </ul>
                 </li>
-                <li>
-                    Classes
-                </li>
-                <li>
-                    Events
-                </li>
-                <li>
-                    Products
-                </li>
-                <li>
-                    Contacts
-                </li>
+                <li>Classes</li>
+                <li>Events</li>
+                <li>Products</li>
+                <li>Contacts</li>
             </ul>
         </nav>
     </header>
+
+    <!-- Header section for mobile (hidden on desktop/larger screens) -->
     <header class="container hide-on-large">
+        <!-- Hamburger Menu icon with onclick event to navigate to menu.html -->
         <img src="assets/menuicon.png" alt="menu" class="menu" onclick="window.location.href='menu.html'">
-        <span class="title">Slow Clay Center</span>
-        <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon"
-            onclick="window.location.href='shoppingcart.html'">
+        <!-- Company logo, clickable to go to index.html -->
+        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <!-- Shopping cart icon with onclick event to navigate to shoppingcart.html -->
+        <img src="assets/carticon.png" alt="shopping icon" class="shoppingicon" onclick="window.location.href='shoppingcart.html'">
     </header>
+
     <main>
+        <!-- Section for main home image and tagline -->
         <section>
+            <!-- Responsive image for desktop -->
             <img src="assets/header+2xblur.png" alt="Pottery Class Image" class="hide-on-small">
-            <img src="assets/Home(Mobile).png" alt="Pottery Class Image" class="mimg hide-on-large">
-            <div class="imgtext">
+
+            <!-- Responsive image for mobile -->
+            <img src="assets/Home(Mobile).png" alt="Pottery Class Image" class="m-img hide-on-large">
+
+            <!-- Text overlay -->
+            <div class="img-text">
                 <h1 class="ht">Slow down the pace and escape into a world of ceramics </h1>
             </div>
         </section>
 
         <section>
-            <h2 class="imgtext2">Explore Classes</h2>
-            <div class="userinfo">
-                <div class="formitem">
-                    <input type="text" class="textInput2" id="payment_email" name="email"
-                        placeholder="       Search classes" oninput="toggleIcon(this);" />
+            <h2 class="img-text2">Explore Classes</h2>
+
+            <!-- Search bar for user to find classes -->
+            <div class="user-info">
+                <div class="form-item">
+                    <input type="text" class="text-input2" id="payment_email" name="email" placeholder="Search classes"
+                        oninput="toggleIcon(this);">
                 </div>
-                <div class="imgtext3 h8">Tap the + icon for more information </div>
+                <div class="img-text3 h8">Tap the + icon for more information</div>
+            </div>
         </section>
+
+        <!-- Classes carousel -->
         <section>
-            <div class="carouselcontainer">
-                <div class="carouselcol">
+            <div class="carousel-container">
+                <!-- Carousel column for Wheel Taster Class -->
+                <div class="carousel-col">
                     <img src="assets/Wheel taster class.png" alt="Wheel Taster Class"
                         onclick="window.location.href='product1.html'">
                     <div class="cc-overlay">
                         <span class="h7">Wheel Taster Class</span>
-                        <p class="imgtextcarousel">Our beginner pottery class is a 2-hour session that will introduce
+                        <p class="img-text-carousel">Our beginner pottery class is a 2-hour session that will introduce
                             you to what it’s like to learn to use the pottery wheel.</p>
                     </div>
-                    <button type="button" class="moreinfobtn" onclick="window.location.href='product1.html'">
+                    <button type="button" class="more-info-btn" onclick="window.location.href='product1.html'">
                         <img src="assets/plusicon.png" alt="plus icon">
                     </button>
                 </div>
-                <div class="carouselcol">
+
+                <!-- Carousel column for Beginners Wheel Pottery Classes -->
+                <div class="carousel-col">
                     <img src="assets/Beginners Wheel Pottery Classes.png" alt="Beginners Wheel Pottery Classes"
                         onclick="window.location.href='product2.html'">
                     <div class="cc-overlay">
                         <span class="h7">Beginners Wheel Pottery Classes</span>
-                        <p class="imgtextcarousel">Our popular 8-week Beginner’s wheel course provides a solid
+                        <p class="img-text-carousel">Our popular 8-week Beginner’s wheel course provides a solid
                             foundation for working on the potterʼs wheel.</p>
                     </div>
-                    <button type="button" class="moreinfobtn" onclick="window.location.href='product2.html'">
+                    <button type="button" class="more-info-btn" onclick="window.location.href='product2.html'">
                         <img src="assets/plusicon.png" alt="plus icon">
                     </button>
                 </div>
-                <div class="carouselcol">
+
+                <!-- Carousel column for Intermediate-Advanced Wheel Classes -->
+                <div class="carousel-col">
                     <img src="assets/Intermediate-Advanced Wheel Classes.png" alt="Wheel Taster Class">
                     <div class="cc-overlay">
                         <span class="h7">Intermediate-Advanced Wheel Classes</span>
-                        <p class="imgtextcarousel">For students who have completed 2 beginner courses or equivalent
+                        <p class="img-text-carousel">For students who have completed 2 beginner courses or equivalent
                             elsewhere. These eight-week courses are offered four times per year.</p>
                     </div>
-                    <button type="button" class="moreinfobtn">
+                    <button type="button" class="more-info-btn">
                         <img src="assets/plusicon.png" alt="plus icon">
                     </button>
                 </div>
-                <div class="carouselcol">
+
+                <!-- Carousel column for Weekend Intensive Wheel Classes -->
+                <div class="carousel-col">
                     <img src="assets/Weekend Intensive Wheel Classes.png" alt="Wheel Taster Class">
                     <div class="cc-overlay">
                         <span class="h7">Weekend Intensive Wheel Classes</span>
-                        <p class="imgtextcarousel">This course covers the same course content as our Beginner’s
+                        <p class="img-text-carousel">This course covers the same course content as our Beginner’s
                             Wheel compressed into one weekend + an extra glaze lesson!</p>
                     </div>
-                    <button type="button" class="moreinfobtn">
+                    <button type="button" class="more-info-btn">
                         <img src="assets/plusicon.png" alt="plus icon">
                     </button>
                 </div>
+
+                <!-- Ensure to add similar structure for other classes -->
+
             </div>
         </section>
 
+        <!-- Vouchers carousel-->
         <section>
             <h2 class="vtext">Vouchers</h2>
             <div class="vtext h8">Tap the shopping cart icon below to add to cart</div>
-        </section>
-        <section>
-            <div class="carouselcontainer">
-                <div class="carouselcol">
-                    <img src="assets/Voucher (135).png" alt="Wheel Taster Class">
+
+            <div class="carousel-container">
+                <!-- Carousel column for $135 Voucher -->
+                <div class="carousel-col">
+                    <img src="assets/Voucher (135).png" alt="$135 Voucher">
                     <div class="cc-overlay">
-                        <h4 class="txtsize">$135</h4>
+                        <h4 class="txt-size">$135</h4>
                     </div>
-                    <button type="button" class="shoppingbtn">
-                        <img src="assets/carticon.png" alt="plus icon">
+                    <button type="button" class="shopping-btn">
+                        <img src="assets/carticon.png" alt="shopping cart icon">
                     </button>
                 </div>
-                <div class="carouselcol">
-                    <img src="assets/Voucher (270).png" alt="Beginners Wheel Pottery Classes">
+
+                <!-- Carousel column for $270 Voucher -->
+                <div class="carousel-col">
+                    <img src="assets/Voucher (270).png" alt="$270 Voucher">
                     <div class="cc-overlay">
-                        <h4 class="txtsize">$270</h4>
+                        <h4 class="txt-size">$270</h4>
                     </div>
-                    <button type="button" class="shoppingbtn">
-                        <img src="assets/carticon.png" alt="plus icon">
+                    <button type="button" class="shopping-btn">
+                        <img src="assets/carticon.png" alt="shopping cart icon">
                     </button>
                 </div>
-                <div class="carouselcol">
-                    <img src="assets/Voucher (625).png" alt="Wheel Taster Class">
+
+                <!-- Carousel column for $625 Voucher -->
+                <div class="carousel-col">
+                    <img src="assets/Voucher (625).png" alt="$625 Voucher">
                     <div class="cc-overlay">
-                        <h4 class="txtsize">$625</h4>
+                        <h4 class="txt-size">$625</h4>
                     </div>
-                    <button type="button" class="shoppingbtn">
-                        <img src="assets/carticon.png" alt="plus icon">
+                    <button type="button" class="shopping-btn">
+                        <img src="assets/carticon.png" alt="shopping cart icon">
                     </button>
                 </div>
+
+                <!-- Ensure to add similar structure for other voucher amounts -->
+
             </div>
         </section>
-
     </main>
 
+    <!-- Footer section -->
     <footer>
+        <!-- Contact information -->
         <h3>Contact</h3>
         <h6>Phone: 399 437 844</h6>
-        <h6>Email: info@slowclay.com</h6>
+        <h6>Email: info@slowclay.com</h6>
     </footer>
 </body>
 
