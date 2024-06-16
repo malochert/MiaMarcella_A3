@@ -1077,7 +1077,7 @@ img.cartthumbnail {
         margin-right: 2rem;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
-        padding-top: 2rem;
+        margin-top: -6rem;
         padding-bottom: 0.25rem;
     }
 }
@@ -1098,8 +1098,7 @@ img.cartthumbnail {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
 #down-icon {
@@ -1111,40 +1110,24 @@ img.cartthumbnail {
     height: 150px;
     border-radius: 30px;
     margin: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 9rem;
 }
 
 .listing ul {
-    margin-top: -10rem;
     padding-left: 2rem;
-}
-
-.listing img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    padding-left: 14rem;
-    border-bottom-right-radius: 30px;
-}
-
-#listing1 {
-    background-image: url(assets/green_gradient_background.png);
-    background-size: cover;
-    background-color: #cccccc;
-}
-
-#listing1 img {
     padding-top: 1.5rem;
 }
 
-#listing2 {
-    background-image: url(assets/grey_gradient_background.png);
+#listing1 {
+    background-image: url(assets/beginners_background+object.png);
     background-size: cover;
     background-color: #cccccc;
 }
 
-#listing2 img {
-    padding-right: 10rem;
+#listing2 {
+    background-image: url(assets/wheeltaster_background+object.png);
+    background-size: cover;
+    background-color: #cccccc;
 }
 
 #listing2 ul {
@@ -1446,10 +1429,6 @@ img.cartthumbnailmin {
     filter: drop-shadow(0 0 0.5rem #8e8e8e);
 }
 
-.formpopup h2 {
-    text-align: center;
-}
-
 .formcontainer {
     display: flex;
     flex-direction: column;
@@ -1523,6 +1502,15 @@ img.cartthumbnailmin {
         margin-left: 1rem;
         margin-right: 1rem;
     }
+    .formcontainer {
+        padding-right: 2rem;
+        margin-bottom: -6rem;
+    }
+    .selectpaymentmethod {
+        font-weight: 600;
+        text-align: center;
+        width: 14rem;
+    }
     .paymentlogo1 {
         scale: 30%;
         transform: translateX(-55%) translateY(-100%);
@@ -1533,7 +1521,7 @@ img.cartthumbnailmin {
     }
     .paymentlogo3 {
         scale: 30%;
-        transform: translateX(-55%) translateY(-110%);
+        transform: translateX(-55%) translateY(-105%);
     }
     .paymentlogo4 {
         scale: 35%;
