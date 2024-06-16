@@ -16,3 +16,10 @@ function secondButton() {
     return true;
 }
 
+function toggleIcon(self) {
+    if (self.value.trim() === '') {
+        self.style.backgroundImage = 'url(assets/searchicon.png)';
+    } else {
+        self.style.backgroundImage = 'none';
+    }
+}

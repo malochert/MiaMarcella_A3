@@ -140,6 +140,28 @@ p {
     line-height: normal;
     margin-bottom: 1%;
     line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .info {
+        margin-left: 9%;
+        margin-right: 10%;
+        margin-top: 4%;
+        color: #555;
+        font-family: Lexend;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 1%;
+        line-height: 1.5;
+        font-size: 0.8em;
+    }
+}
+
+.info > li{
+    margin-top: 5%;
 }
 
 .title {
@@ -364,7 +386,7 @@ img {
     position: absolute;
     padding-left: 5%;
     display: flex;
-    top: 100%;
+    top: 105%;
 }
 
 @media screen and (max-width: 390px) {
@@ -372,7 +394,7 @@ img {
         position: absolute;
         padding-left: 5%;
         display: flex;
-        top: 100%;
+        top: 107%;
     }
 }
 
@@ -606,12 +628,12 @@ nav li:hover ul {
 }
 
 @media screen and (max-width: 390px) {
-    .sbtn img {
+    .sbtn {
         width: 11%;
         height: 20px;
-        margin-right: 5px;
-        margin-left: 50%;
-        left: 50%;
+        left: 8%;
+        top: 500%;
+        z-index: 1;
     }
 }
 
@@ -832,6 +854,12 @@ nav li:hover ul {
     margin-top: 6%;
     margin-left: 5%;
 }
+@media screen and (max-width: 390px) {
+    .infotitle {
+        margin-right: 5%;
+        text-align: center;
+    }
+}
 
 /* calendar */
 
@@ -867,11 +895,10 @@ td {
 
 @media screen and (max-width: 390px) {
 
-    th,
-    td {
+    th, td {
         font-family: "lexend";
         text-align: center;
-        padding: 2.5%;
+        padding: 4%;
         width: calc(100%/7);
     }
 }
@@ -956,9 +983,9 @@ th {
         /* Center content horizontally */
         align-items: center;
         /* Center content vertically */
-        margin-left: 5%;
-        margin-bottom: 5%;
-        margin-top: 5%;
+        margin-left: 6%;
+        margin-bottom: 8%;
+        margin-top: 10%;
     }
 }
 
@@ -1215,6 +1242,44 @@ form p {
     padding: 1rem 1rem;
     border-radius: 30px;
     font-size: 0.9rem;
+}
+
+.textInput2 {
+    background-image: url(assets/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: 25px center;
+    background-size: 25px 25px;
+    padding-left: 25px;
+    width: 26rem;
+    padding: 1.5rem 1.5em;
+    margin-left: 4%;
+    border-radius: 40px;
+    font-size: 1.3rem;
+    background-color: #dfdfdf;
+    font-family: "lexend";
+    border: white;
+    text-align: left;
+    transform: translateY(-30%);
+}
+
+@media screen and (max-width: 390px) {
+    .textInput2 {
+        background-image: url('assets/searchicon.png');
+        background-repeat: no-repeat;
+        background-position: 19px center; /* Position the image */
+        background-size: 18px 18px; /* Adjust the size of the image */
+        padding-left: 25px; /* Add padding to the left to make space for the image */
+        box-sizing: border-box; /* Ensure padding doesn't affect the overall width */
+        width: 20rem;
+        padding: 1rem 1rem;
+        margin-left: 3%;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        background-color: #dfdfdf;
+        font-family: "lexend";
+        border: white;
+        transform: translateY(-40%);
+    }
 }
 
 .bottomitems {
