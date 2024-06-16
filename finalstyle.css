@@ -15,14 +15,7 @@ h1 {
     font-weight: 700;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6,
-.h7,
-.h8,
-.h9 {
+h2, h3, h4, h5, h6, .h7, .h8, .h9 {
     color: #555;
     font-family: "Crimson Text", Times, serif;
 }
@@ -91,7 +84,6 @@ p {
         font-style: normal;
         font-weight: 600;
     }
-
     h2 {
         font-size: 2rem;
         font-weight: 600;
@@ -164,8 +156,7 @@ nav {
     margin: 0;
 }
 
-ol,
-ul {
+ol, ul {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -178,7 +169,6 @@ nav>ul {
     width: 100vw;
     /*changing the nav bar width*/
 }
-
 
 nav li {
     font-size: 24px;
@@ -220,7 +210,6 @@ nav li:hover ul {
         width: 100vw;
         background-color: white;
     }
-
     .title {
         margin-top: 2%;
         color: #000;
@@ -231,9 +220,6 @@ nav li:hover ul {
         font-style: normal;
         font-weight: 700;
     }
-}
-
-@media screen and (max-width: 390px) {
     header>img {
         color: #000;
         text-align: center;
@@ -430,13 +416,6 @@ nav li:hover ul {
     justify-content: center;
 }
 
-.more-info-btn img {
-    transform: none;
-    width: 24px;
-    height: 24px;
-    bottom: 12px;
-}
-
 .vtext {
     margin-left: 5%;
     margin-bottom: 1%;
@@ -458,14 +437,6 @@ nav li:hover ul {
     justify-content: center;
 }
 
-.shopping-btn img {
-    transform: none;
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-    bottom: 12px;
-}
-
 /* Mobile homepage style classes */
 .m-img {
     width: 100%;
@@ -477,18 +448,12 @@ nav li:hover ul {
         margin-bottom: 110%;
         color: 555555;
     }
-}
-
-@media screen and (max-width: 390px) {
     .img-text2 {
         position: absolute;
         padding-left: 5%;
         display: flex;
         top: 100%;
     }
-}
-
-@media screen and (max-width: 390px) {
     .text-input2 {
         background-image: url('assets/searchicon.png');
         background-repeat: no-repeat;
@@ -511,15 +476,9 @@ nav li:hover ul {
         border: white;
         transform: translateY(90%);
     }
-}
-
-@media screen and (max-width: 390px) {
     .img-text3 {
         margin-top: -1%;
     }
-}
-
-@media screen and (max-width: 390px) {
     .carousel-container {
         display: flex;
         padding: 1px;
@@ -528,23 +487,15 @@ nav li:hover ul {
         margin-bottom: 5%;
         overflow-x: scroll;
     }
-}
-
-@media screen and (max-width: 390px) {
     .carousel-col img {
         width: 15em;
-        ;
         height: auto;
     }
-}
-
-@media screen and (max-width: 390px) {
     .more-info-btn {
         position: absolute;
         bottom: 3vw;
         right: 5vw;
-        width: 24px;
-        height: 24px;
+        width: 0.005%;
         background: none;
         border: none;
         cursor: pointer;
@@ -554,15 +505,9 @@ nav li:hover ul {
         display: flex;
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 390px) {
     .txt-size {
         font-size: 1.5em;
     }
-}
-
-@media screen and (max-width: 390px) {
     .shopping-btn {
         position: absolute;
         bottom: 3vw;
@@ -578,6 +523,22 @@ nav li:hover ul {
         display: flex;
         justify-content: center;
     }
+}
+
+
+/* Additional retroactive homepage style classes */
+.more-info-btn img {
+    transform: none;
+    width: 24px;
+    height: 24px;
+    bottom: 12px;
+}
+.shopping-btn img {
+    transform: none;
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    bottom: 12px;
 }
 
 /* Product pages style classes (product1.html and product2.html) */
@@ -678,8 +639,7 @@ nav li:hover ul {
     border-bottom-right-radius: 30px;
 }
 
-.previous-days,
-.next-month-days {
+.previous-days, .next-month-days {
     color: #bdbaba;
 }
 
@@ -759,8 +719,7 @@ table {
     margin-bottom: 2%;
 }
 
-th,
-td {
+th, td {
     font-family: "lexend";
     text-align: center;
     padding: 2.5%;
@@ -772,8 +731,7 @@ th {
     color: #333;
 }
 
-.weekdays th:nth-child(odd),
-.weekdays th:nth-child(even) {
+.weekdays th:nth-child(odd), .weekdays th:nth-child(even) {
     font-family: "Lexend";
     color: #696969;
 }
@@ -843,15 +801,9 @@ th {
         width: 100%;
         margin-top: -18%;
     }
-}
-
-@media screen and (min-width: 390) {
     .center {
         text-align: center;
     }
-}
-
-@media screen and (max-width: 390px) {
     .center>h3 {
         margin-top: 60%;
         margin-bottom: 0%;
@@ -860,9 +812,6 @@ th {
         flex-shrink: 0;
         overflow-block: clip;
     }
-}
-
-@media screen and (max-width: 390px) {
     .img-title-text {
         position: absolute;
         padding: 20%;
@@ -872,9 +821,6 @@ th {
         transform: translate(-10%, -75%);
         color: #333030;
     }
-}
-
-@media screen and (max-width: 390px) {
     .column {
         float: center;
         justify-content: center;
@@ -885,40 +831,25 @@ th {
         padding: 1%;
         width: 80%;
     }
-}
-
-@media screen and (max-width: 390px) {
     .column>h5 {
         text-align: center;
         padding-top: 18%;
         padding-bottom: 10%;
     }
-}
-
-@media screen and (max-width: 390px) {
     .column>.h7 {
         font-family: lexend;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 390px) {
     .bold {
         font-family: lexend;
         font-weight: 600;
         margin-top: 3%;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 390px) {
     .info-title {
         margin-right: 5%;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 400px) {
     .info {
         margin-left: 9%;
         margin-right: 10%;
@@ -934,15 +865,9 @@ th {
         font-size: 0.8em;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 400px) {
     .info>li {
         margin-top: 5%;
     }
-}
-
-@media (max-width: 390px) {
     .cartbtn {
         background-color: #C9CDB0;
         width: 21rem;
@@ -959,9 +884,6 @@ th {
         margin-bottom: 8%;
         margin-top: 10%;
     }
-}
-
-@media (max-width: 390px) {
     .cartbtn2 {
         background-color: #000000;
         width: 21rem;
@@ -992,12 +914,7 @@ th {
         margin-bottom: 2%;
         margin: 9%;
     }
-}
-
-@media screen and (max-width: 390px) {
-
-    th,
-    td {
+    th, td {
         font-family: "lexend";
         text-align: center;
         padding: 4%;
@@ -1321,9 +1238,6 @@ form p {
         margin-top: -6rem;
         padding-bottom: 0.25rem;
     }
-}
-
-@media screen and (max-width: 390px) {
     .total {
         margin-top: 1.5rem;
         margin-left: 2rem;
