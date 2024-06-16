@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="finalstyle.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -147,8 +148,11 @@
                 Bookings are a commitment to attend. If you are ill or cannot attend we can occasionally transfer you to another date but only if we can find a replacement for you. There is a $25 per person transfer fee.</li>
               <li>NEW: Refund insurance is now available at the checkout for an extra 10%. We strongly recommend it as we do not give refunds under any circumstances. We encourage you to sign up to our newsletter and add us to your email contact list for all updates.</li>
             </ul>
-            <button class="cartbtn" onclick="window.location.href='shoppingcart.html'">
-              <h5 class="centercartbtn">Add to Cart</h5>
+            <button class="cartbtn" id="first_button" type="submit" onclick="secondButton()">
+              <h5>ADD TO CART</h5>
+            </button>
+            <button class="cartbtn2" id="second_button" onclick="firstButton()">
+              <h5 class="cart-btn-2-text">ADDED TO CART</h5>
             </button>
         </section>
     </main>

@@ -15,6 +15,24 @@ function secondButton() {
     document.getElementById("second_button").style.display = "block";
 }
 
+function firstButton() {
+    document.getElementById("first_button").style.display = "block";
+    document.getElementById("second_button").style.display = "none";
+}
+
+document.getElementById('cartButton').addEventListener('click', function() {
+    var buttonText = this.querySelector('.centercartbtn');
+
+    if (this.getAttribute('data-clicked') === 'true') {
+      window.location.href = 'shoppingcart.html';
+    } else {
+      this.style.backgroundColor = 'black';  
+      buttonText.innerText = 'Proceed to Cart';
+      buttonText.style.color = 'white';
+      this.setAttribute('data-clicked', 'true');
+    }
+  });
+
 function toggleIcon(self) {
     if (self.value.trim() === '') {
         self.style.backgroundImage = 'url(assets/searchicon.png)';
