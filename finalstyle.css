@@ -1659,3 +1659,32 @@ img.cartthumbnailmin {
     transform: translateX(200%) translateY(20%);
     margin-top: 10px;
 }
+
+
+.menu-title{
+    font-family: "Crimson Text", Times, serif;
+    font-size: 60px;
+    margin-bottom: 1%;
+    margin-top: 30%;
+    padding-top: 0%;
+    color: #555;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.menu-categories{
+    color: #555;
+    padding-top: 35px;
+    text-align: center;
+    font-family: "Crimson Text", Times, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-categories > li{
+    padding-top: 23px;
+}
