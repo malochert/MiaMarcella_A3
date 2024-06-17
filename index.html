@@ -21,17 +21,17 @@
     <!-- Header section for desktop (hidden on mobile/smaller screens) -->
     <header class="container hide-on-small">
         <!-- Back button to previous page -->
-        <img src="assets/backicon.png" alt="back icon" class="back" onclick="history.back()">
+        <img src="assets/backicon.png" alt="back icon" class="back clickable" onclick="history.back()">
         <!-- Company logo, clickable to go to index.html -->
-        <span class="title" onclick="window.location.href='index.html'">Slow Clay Center</span>
+        <span class="title clickable" onclick="window.location.href='index.html'">Slow Clay Center</span>
         <!-- Shopping cart icon, clickable to go to shoppingcart.html -->
-        <img src="assets/carticon.png" alt="shopping icon" onclick="window.location.href='shoppingcart.html'">
+        <img src="assets/carticon.png" alt="shopping icon" class="clickable" onclick="window.location.href='shoppingcart.html'">
 
         <!-- Horizontal navigation menu with various sections and nested list under About -->
         <nav class="hide-on-small">
             <ul>
-                <li onclick="window.location.href='index.html'">Home</li>
-                <li>About
+                <li class="clickable" onclick="window.location.href='index.html'">Home</li>
+                <li class="clickable" >About
                     <ul>
                         <li>News</li>
                         <li>Blog</li>
