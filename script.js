@@ -18,19 +18,19 @@ function closeForm() {
     document.querySelector(".blurred").className = "shopping-cart";
 }
 
-// Function to switch from the first button (ADD TO CART) to the second button (ADDED TO CART) on click event
+// Function to switch from the first button to the second button on click event
 function secondButton() {
-    // Hide the first button (ADD TO CART)
+    // Hide the first button
     document.getElementById("first_button").style.display = "none";
-    // Show the second button (ADDED TO CART)
+    // Show the second button
     document.getElementById("second_button").style.display = "block";
 }
 
-// Function to switch from the second button (ADDED TO CART) back to the first button (ADD TO CART) on click event
+// Function to switch from the second button back to the first button on click event
 function firstButton() {
-    // Show the first button (ADD TO CART)
+    // Show the first button
     document.getElementById("first_button").style.display = "block";
-    // Hide the second button (ADDED TO CART)
+    // Hide the second button
     document.getElementById("second_button").style.display = "none";
 }
 

@@ -1,0 +1,25 @@
+/* DESKTOP FOOTER STYLE */
+footer {
+    width: 100;
+    padding: 0.1em;
+    padding-left: 10em;
+    padding-bottom: 3%;
+    padding-top: 2%;
+    line-height: 1.5;
+    margin: 0%;
+    background-color: rgba(150, 123, 109, 0.35);
+}
+
+/* MOBILE FOOTER STYLE */
+@media screen and (max-width: 390px) {
+    footer {
+        width: 100;
+        padding: 0.1em;
+        padding-left: 2em;
+        padding-bottom: 4%;
+        padding-top: 2%;
+        line-height: 1.5;
+        margin: 0%;
+        background-color: rgba(150, 123, 109, 0.35);
+    }
+}

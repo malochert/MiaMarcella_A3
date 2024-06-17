@@ -9,9 +9,11 @@
 
 @import url("typographystyle.css");
 @import url("headerstyle.css");
+@import url("footerstyle.css");
 
-/* Body styles */
+/* BODY STYLES */
 body {
+    /* Applies to all pages */
     margin: 0%;
     font-family: "Crimson Text, Lexend";
 }
@@ -23,7 +25,7 @@ img {
     margin-top: 0px;
 }
 
-/* Homepage style classes */
+/* HOMEPAGE STYLE CLASSES */
 .img-text {
     position: absolute;
     top: 50%;
@@ -172,7 +174,7 @@ img {
     justify-content: center;
 }
 
-/* Mobile homepage style classes */
+/* MOBILE HOMEPAGE STYLE CLASSES */
 .m-img {
     width: 100%;
 }
@@ -276,7 +278,7 @@ img {
     bottom: 12px;
 }
 
-/* Product pages style classes (product1.html and product2.html) */
+/* PRODUCT PAGES STYLE CLASSES (product1.html AND product2.html) */
 .product-img {
     width: 100vw;
     margin-top: 10%;
@@ -500,7 +502,7 @@ th {
     border: 2px solid #ddd;
 }
 
-/* product2.html style variations */
+/* product2.html STYLE VARIATIONS */
 .product-img-2 {
     margin: 0%;
     width: 100%;
@@ -516,7 +518,7 @@ th {
     color: black;
 }
 
-/* Mobile product2.html style variations */
+/* MODILE product2.html STYLE VARIATIONS */
 @media screen and (max-width: 390px) {
     .img-title-text-2 {
         position: absolute;
@@ -530,7 +532,7 @@ th {
     }
 }
 
-/* Mobile product pages style classes (product1.html and product2.html) */
+/* MOBILE PRODUCT PAGES STYLE CLASSES (product1.html AND product2.html) */
 @media screen and (max-width: 390px) {
     .product-img {
         width: 100%;
@@ -637,7 +639,7 @@ th {
     }
 }
 
-/* Mobile calendar */
+/* MOBILE calendar */
 @media screen and (max-width: 390px) {
     table {
         float: right;
@@ -657,7 +659,7 @@ th {
     }
 }
 
-/* General shoppingcart.html and paymentinfo.html layout classes */
+/* GENERAL shoppingcart.html AND paymentinfo.html LAYOUT CLASSES */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -678,7 +680,7 @@ th {
     font-weight: 600;
 }
 
-/* shoppingcart.html style classes */
+/* shoppingcart.html STYLE CLASSES */
 .form-background {
     display: none;
     position: fixed;
@@ -917,7 +919,7 @@ form p {
     filter: blur(10px);
 }
 
-/* Mobile shoppingcart.html style classes */
+/* MOBILE shoppingcart.html STYLE CLASSES */
 .product-list_m {
     display: flex;
     flex-direction: column;
@@ -989,6 +991,7 @@ form p {
     padding-bottom: 3rem;
 }
 
+/* Animations for down arrow and payment method form [Mobile site only] */
 @media screen and (max-width: 390px) {
     @keyframes grow-in {
         to {
@@ -1025,7 +1028,7 @@ form p {
     }
 }
 
-/* Mobile payment method form */
+/* MOBILE payment method form */
 @media screen and (max-width: 390px) {
     .form-popup {
         display: block;
@@ -1070,7 +1073,7 @@ form p {
     }
 }
 
-/* paymentinfo.html style classes */
+/* paymentinfo.html STYLE CLASSES */
 .two-columns {
     display: flex;
     flex-direction: row;
@@ -1142,8 +1145,7 @@ img.cart-thumbnail-min {
     width: 3rem;
 }
 
-.form-item4,
-.form-item5 {
+.form-item4, .form-item5 {
     width: 6rem;
 }
 
@@ -1172,7 +1174,7 @@ img.cart-thumbnail-min {
     display: none;
 }
 
-/* Mobile paymentinfo.html style classes */
+/* MOBILE paymentinfo.html STYLE CLASSES */
 @media screen and (max-width: 390px) {
     .user-info {
         margin: auto;
@@ -1182,7 +1184,7 @@ img.cart-thumbnail-min {
     }
 }
 
-/* confirmationpage.html style classes */
+/* confirmationpage.html STYLE CLASSES */
 .confirmation-page {
     background-color: #C9CDB0;
     padding-top: 16rem;
@@ -1192,7 +1194,7 @@ img.cart-thumbnail-min {
 .confirmation-content {
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 70vh;
     justify-content: space-between;
     gap: 3rem;
 }
@@ -1215,7 +1217,7 @@ img.cart-thumbnail-min {
     transform: translateX(-0.5%);
 }
 
-/* Mobile confirmationpage.html style classes */
+/* MOBILE confirmationpage.html STYLE CLASSES */
 @media screen and (max-width: 390px) {
     .confirmation-content {
         margin: auto;
@@ -1237,33 +1239,6 @@ img.cart-thumbnail-min {
     .confirmation-content img {
         scale: 200%;
         transform: translateX(-1%);
-    }
-}
-
-
-/* Desktop footer style */
-footer {
-    width: 100;
-    padding: 0.1em;
-    padding-left: 10em;
-    padding-bottom: 3%;
-    padding-top: 2%;
-    line-height: 1.5;
-    margin: 0%;
-    background-color: rgba(150, 123, 109, 0.35);
-}
-
-/* Mobile footer style */
-@media screen and (max-width: 390px) {
-    footer {
-        width: 100;
-        padding: 0.1em;
-        padding-left: 2em;
-        padding-bottom: 4%;
-        padding-top: 2%;
-        line-height: 1.5;
-        margin: 0%;
-        background-color: rgba(150, 123, 109, 0.35);
     }
 }
 
