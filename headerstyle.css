@@ -1,4 +1,4 @@
-/* General header style classes */
+/* GENERAL header style classes */
 .back {
     position: relative;
     width: 2.5%;
@@ -13,7 +13,7 @@
     margin-top: 10px;
 }
 
-/* Desktop header style classes */
+/* DESKTOP header style classes */
 .container {
     display: flexbox;
     text-align: center;
@@ -44,7 +44,7 @@ header>img {
     margin-top: 1px;
 }
 
-/* Desktop navigation menu */
+/* DESKTOP navigation menu */
 nav {
     width: 100vw;
     margin: 0;
@@ -94,7 +94,7 @@ nav li:hover ul {
     transition: 0.3s;
 }
 
-/* Mobile header style classes */
+/* MOBILE header style classes */
 @media screen and (max-width: 390px) {
     .container {
         display: flex;
@@ -134,7 +134,7 @@ nav li:hover ul {
     margin-top: 10px;
 }
 
-/* Mobile menu style classes (about.html and menu.html) */
+/* MOBILE menu style classes (about.html and menu.html) */
 .menu-categories {
     color: #555;
     padding-top: 35px;

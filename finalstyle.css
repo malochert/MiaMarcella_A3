@@ -25,6 +25,10 @@ img {
     margin-top: 0px;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 /* HOMEPAGE STYLE CLASSES */
 .img-text {
     position: absolute;
