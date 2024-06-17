@@ -358,6 +358,7 @@ a, button {
     font-family: lexend;
     font-weight: 600;
     margin-top: 3%;
+    font-size: large;
 }
 
 .img-scale {
@@ -403,6 +404,7 @@ a, button {
 
 .info>li {
     margin-top: 2%;
+    line-height: normal;
 }
 
 .cartbtn {
